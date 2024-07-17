@@ -5,7 +5,7 @@
     "image": "",
     "email": "chengsf@umich.edu",
     "phone": "+65 6828-0526",
-    "url": "https://sfcheng75.github.io/",
+    "url": "https://sfcheng-research.github.io/",
     "summary": "Principal Research Scientist at Amazon; Associate Professor of Computer Science at Singapore Management University",
     "location": {
       "address": "80 Stamford Road",
@@ -119,60 +119,207 @@
   ],
   "awards": [
     {
-      "title": "",
-      "url": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "Best Student Paper Award",
+      "url": "https://web.archive.org/web/20211020105331/https://www.icss2021.servicescienceglobal.org/competitions/",
+      "date": "2021",
+      "awarder": "2021 INFORMS Conference on Service Science",
+      "summary": "Winning material: <a href='https://ink.library.smu.edu.sg/sis_research/6131/'>Integrating Empirical Analysis into Analytical Framework: An Integrated Model Structure for On-Demand Transportation</a>."
     },
     {
-      "title": "",
-      "url": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "Finalist",
+      "url": "https://web.archive.org/web/20240709102855/https://pubsonline.informs.org/do/10.1287/LYTX.2020.01.26n/full/",
+      "date": "2020",
+      "awarder": "INFORMS Innovative Applications in Analytics Award (IAAA)",
+      "summary": "Winning material: Driver Guidance System for Taxi Drivers."
     },
     {
-      "title": "",
-      "url": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "Lee Kong Chian Fellowship for Research Excellence",
+      "date": "2019",
+      "awarder": "Singapore Management University",
+      "summary": "Established in 2014 using the Lee Kong Chian Fund for Research Excellence from the Lee Foundation, the Fellowship acknowledges and rewards faculty who have an excellent research record and hold great promise."
     },
     {
-      "title": "",
-      "url": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "Best Application Demo",
+      "url": "https://web.archive.org/web/20190331044601/http://celweb.vuse.vanderbilt.edu/aamas18/awardWinners",
+      "date": "2018",
+      "awarder": "Seventeenth International Conference on Autonomous Agents and Multiagent Systems (AAMAS-18)",
+      "summary": "Winning material: <a href='https://ink.library.smu.edu.sg/sis_research/4118/'>A Driver Guidance System for Taxis in Singapore</a>."
     },
     {
-      "title": "",
-      "url": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
+      "title": "First Prize, CIKM AnalytiCup: DataSpark Mobility Open-Task Challenge",
+      "url": "https://web.archive.org/web/20180825080623/http://www.cikmconference.org/CIKM2017/analytiCupfinals_winners.html",
+      "date": "2017",
+      "awarder": "Twenty-Sixth ACM International Conference on Information and Knowledge Management (CIKM-17)",
+      "summary": "Winning material: <a href='/assets/pdf/CIKMAnalytiCup2017_DataSparkMobility_T10.pdf'>Predicting Taxi Demand-Supply Mismatches to Dynamically Position Mobility-on-Demand Services</a>."
+    },
+    {
+      "title": "Honorable Mention, Best of CSCW Award",
+      "url": "https://ink.library.smu.edu.sg/sis_research/3181/",
+      "date": "2016",
+      "awarder": "Nineteenth ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW-16)",
+      "summary": "Top 5% of all accepted papers. Winning material: <a href='https://ink.library.smu.edu.sg/sis_research/3181/'>Campus-scale mobile crowd-tasking: Deployment and behavioral insights</>."
+    },
+    {
+      "title": "Lee Kong Chian Fellowship for Research Excellence",
+      "date": "2015",
+      "awarder": "Singapore Management University",
+      "summary": "Established in 2014 using the Lee Kong Chian Fund for Research Excellence from the Lee Foundation, the Fellowship acknowledges and rewards faculty who have an excellent research record and hold great promise."
     },
     {
       "title": "Finalist, George B. Dantzig Dissertation Award",
       "url": "https://www.informs.org/Recognizing-Excellence/Award-Recipients/Shih-Fen-Cheng",
       "date": "2007",
       "awarder": "INFORMS",
-      "summary": "Best dissertation in any area of operations research and the management sciences that is innovative and relevant to practice. Winning Material: Game-theoretic Approaches for Complex Systems Optimization."
+      "summary": "Best dissertation in any area of operations research and the management sciences that is innovative and relevant to practice. Winning Material: <a href='/assets/pdf/thesis_compact_sfcheng.pdf'>Game-theoretic Approaches for Complex Systems Optimization</a>."
     },
     {
       "title": "Wilson Prize",
-      "url": "",
       "date": "2005",
       "awarder": "Department of Industrial and Operations Engineering, University of Michigan",
       "summary": "Best student paper in manufacturing systems: Sampled fictitious play for multi-action stochastic dynamic programs."
     },
     {
       "title": "President's Award",
-      "url": "",
       "date": "1994",
       "awarder": "Department of Mechnical Engineering, National Taiwan University",
       "summary": "Top 5% of the cohort."
+    }
+  ],
+  "grants": [
+    {
+      "position": "PI",
+      "title": "Enabling Sustainable Point-to-Point Transport Service via Behavioral Game Theory",
+      "awarder": "Urban Institute, Singapore Management University",
+      "startDate": "2024-01-01",
+      "endDate": "2025-12-31",
+      "amount": "S$124,990"
+    },
+    {
+      "position": "Co-PI",
+      "title": "The Impacts of On-demand Platforms under Individual Choice Endogeneity",
+      "awarder": "Ministry of Education Academic Research Fund Tier 2",
+      "startDate": "2023-01-01",
+      "endDate": "2025-12-31",
+      "amount": "S$382,187",
+      "with": "Ying Xu (SUTD) as PI"
+    },
+    {
+      "position": "PI",
+      "title": "Learning by Doing in the Age of Big Data",
+      "awarder": "Ministry of Education Social Science Research Thematic Grant",
+      "startDate": "2021-08-01",
+      "endDate": "2024-12-31",
+      "amount": "S$579,318",
+      "with": "Sumit Agarwal, Ben Charoenwong, and Jussi Keppo"
+    },
+    {
+      "position": "PI",
+      "title": "Smart Barrier-Free Access (SmartBFA) 2.0",
+      "awarder": "Mercurics",
+      "startDate": "2021-05-01",
+      "endDate": "2022-04-30",
+      "amount": "S$50,000"
+    },
+    {
+      "position": "Co-PI",
+      "title": "Not for Girls?: Gender Imbalance in STEM and Its impact on Female Students' Creative Performance",
+      "awarder": "Ministry of Education Tertiary Education Research Fund",
+      "startDate": "2021-06-01",
+      "endDate": "2023-05-31",
+      "amount": "S$192,673",
+      "with": "Chi-Ying Cheng as PI"
+    },
+    {
+      "position": "PI",
+      "title": "Intelligent Taxi Queue Management",
+      "awarder": "Changi Airport Group",
+      "startDate": "2019-10-01",
+      "endDate": "2021-09-30",
+      "amount": "S$200,000"
+    },
+    {
+      "position": "Co-Lead PI",
+      "title": "Fujitsu-SMU Urban Computing and Engineering Lab",
+      "awarder": "Fujitsu and National Research Foundation",
+      "startDate": "2014-11-01",
+      "endDate": "2020-10-31",
+      "amount": "S$27,000,000",
+      "with": "Hoong Chuin Lau as Lead PI"
+    },
+    {
+      "position": "PI",
+      "title": "Context-Aware Large-Scale Mobile Crowd-Sourcing",
+      "awarder": "Xerox Research Center India (XRCI)",
+      "startDate": "2013-07-01",
+      "endDate": "2016-07-31",
+      "amount": "USD$150,000",
+      "with": "Archan Misra"
+    },
+    {
+      "position": "PI",
+      "title": "Coordinating Automated Para-Transit Service Operations",
+      "awarder": "Singapore-MIT Alliance for Research and Technology Centre",
+      "startDate": "2011-01-01",
+      "endDate": "2015-12-31",
+      "amount": "S$482,515",
+      "with": "Hoong Chuin Lau"
+    },
+    {
+      "position": "PI",
+      "title": "Optimizing Taxi Fleet Operations",
+      "awarder": "Singapore-MIT Alliance for Research and Technology Centre",
+      "startDate": "2010-11-01",
+      "endDate": "2011-08-30",
+      "amount": "S$46,211"
+    },
+    {
+      "position": "PI",
+      "title": "Commodity Trading Simulation",
+      "awarder": "The Infocomm Development Authority of Singapore",
+      "startDate": "2010-10-01",
+      "endDate": "2011-03-31",
+      "amount": "S4,589"
+    },
+    {
+      "position": "PI",
+      "title": "Policy Implications of Position Limits: An Agent-based Analysis",
+      "awarder": "The Institute for Financial Markets",
+      "startDate": "2010-05-01",
+      "endDate": "2010-09-30",
+      "amount": "USD$15,000",
+      "with": "Bernard Lee and Annie Koh"
+    },
+    {
+      "position": "PI",
+      "title": "Creating a Better Commodity Trading Simulation - A Multi-Agent Approach",
+      "awarder": "SMU International Trading Institute",
+      "startDate": "2008-07-01",
+      "endDate": "2009-06-30",
+      "amount": "S$37,350"
+    },
+    {
+      "position": "PI",
+      "title": "Exploring Agent-based Computational Models",
+      "awarder": "Wharton-SMU Research Centre",
+      "startDate": "2008-05-01",
+      "endDate": "2009-05-01",
+      "amount": "S$39,050"
+    },
+    {
+      "position": "PI",
+      "title": "Market-Based Approaches for Dynamic Resource Allocation Problems",
+      "awarder": "SMU Office of Research",
+      "startDate": "2007-03-01",
+      "endDate": "2008-02-28",
+      "amount": "S$30,100"
+    },
+    {
+      "position": "PI",
+      "awarder": "International Enterprise Singapore",
+      "title": "Designing the Market Game for a Commodity Trading Simulation",
+      "startDate": "2007-02-01",
+      "endDate": "2008-01-31",
+      "amount": "S$47,266"
     }
   ],
   "publications": [

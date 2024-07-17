@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    Shih-Fen Cheng
+  
+</title>
+<meta name="author" content="Shih-Fen Cheng">
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+  <meta name="keywords" content="Amazon, Scientist, SMU, Professor, AI, Computer Science, Shih-Fen, 鄭世昐">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+<!-- pseudocode -->
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="http://0.0.0.0:8080/">
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+<!-- GeoJSON support via Leaflet -->
+
+
+<!-- diff2html -->
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/">about
+              
+                <span class="sr-only">(current)</span>
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/cv/">CV
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/publications/">Publications
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/projects/">Projects
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/teaching/">Teaching
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/people/">People
+                    
+                  </a>
+                </li>
+              
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        <div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        <span class="font-weight-bold">Shih-Fen</span> 
+        Cheng
+      
+    </h1>
+    <p class="desc">Principal Research Scientist, <a href="https://www.amazon.science/" rel="external nofollow noopener" target="_blank">Amazon</a><br> Associate Professor of <a href="https://scis.smu.edu.sg/" rel="external nofollow noopener" target="_blank">Computer Science</a>, <a href="https://www.smu.edu.sg/" rel="external nofollow noopener" target="_blank">Singapore Management University</a><a></a><br>
+</p>
+  </header>
+
+  <article>
+    
+      <div class="profile float-right">
+        
+          
+          
+          
+          
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/sfcheng2015-480.webp 480w,/assets/img/sfcheng2015-800.webp 800w,/assets/img/sfcheng2015-1400.webp 1400w," sizes="(min-width: 980px) 285.0px, (min-width: 576px)
+      30vw, 95vw" type="image/webp">
+    
+    <img src="/assets/img/sfcheng2015.jpg?0a0f3be81c4b13b17a8a389addabb73d" class="img-fluid z-depth-1
+      rounded" width="100%" height="auto" alt="sfcheng2015.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        
+        
+          <div class="more-info">Office 4031<br> 80 Stamford Road<br> Singapore 178902
+</div>
+        
+      </div>
+    
+
+    <div class="clearfix">
+<p>Shih-Fen Cheng is a Principal Research Scientist at <a href="https://www.amazon.science/" rel="external nofollow noopener" target="_blank">Amazon</a>. He is also an Associate Professor of <a href="https://scis.smu.edu.sg/" rel="external nofollow noopener" target="_blank">Computer Science</a> at <a href="https://www.smu.edu.sg/" rel="external nofollow noopener" target="_blank">Singapore Management University</a>. He received his Ph.D. degree in <a href="http://ioe.engin.umich.edu/" rel="external nofollow noopener" target="_blank">industrial and operations engineering</a> from the <a href="http://www.umich.edu/" rel="external nofollow noopener" target="_blank">University of Michigan, Ann Arbor</a>, and B.S.E. degree in <a href="http://www.me.ntu.edu.tw/main.php?site_id=1" rel="external nofollow noopener" target="_blank">mechanical engineering</a> from the <a href="https://www.ntu.edu.tw/english/" rel="external nofollow noopener" target="_blank">National Taiwan University</a>.</p>
+
+<p>His research focuses on the modeling and optimization of complex systems in engineering and business domains, with application in the areas of urban computing and human decision-making. He is particularly concerned about the real-world impact of his research, as illustrated by his recent research on taxi and ride-hailing industry. His research outputs and deployed system have received prestigious international awards from <a href="http://www.cikmconference.org/CIKM2017/analytiCupfinals_winners.html" rel="external nofollow noopener" target="_blank">CIKM</a>, <a href="http://www.ifaamas.org/AAMAS/aamas2018/awardWinners.html" rel="external nofollow noopener" target="_blank">AAMAS</a>, and <a href="https://pubsonline.informs.org/do/10.1287/LYTX.2020.01.26n/full" rel="external nofollow noopener" target="_blank">INFORMS</a>. He regularly publishes in top AI conferences such as IJCAI, AAAI, and AAMAS; he also publishes widely in journals such as Transportation Science, ACM Transactions on Intelligent Systems and Technology, IEEE Transactions on Intelligent Transportation Systems, and IIE Transactions. He is long-time members of INFORMS, AAAI, and IEEE, and serves as Senior Editor for Electronic Commerce Research and Applications.</p>
+</div>
+
+    <!-- News -->
+    
+      <h2>
+        <a href="/news/" style="color: inherit">news</a>
+      </h2>
+      <div class="news">
+  
+    
+    <div class="table-responsive" style="max-height: 60vw">
+      <table class="table table-sm table-borderless">
+        
+        
+        
+          <tr>
+            <th scope="row" style="width: 20%">Jul 05, 2024</th>
+            <td>
+              
+                My PhD students, Qian Shao and Pang Jin Tan, have both been awarded the 2024 SMU Presidential Doctoral Fellowship.
+
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Apr 17, 2024</th>
+            <td>
+              
+                <a class="news-title" href="/news/n_5/">Paper accepted at IJCAI-24</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Feb 13, 2024</th>
+            <td>
+              
+                <a class="news-title" href="/news/n_4/">Paper accepted at ICAPS-24</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Nov 08, 2023</th>
+            <td>
+              
+                <a class="news-title" href="/news/n_3/">Interviewed by Business Times - How does having more high-mileage PHVs fit our aim to reduce traffic snarls?</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Sep 29, 2023</th>
+            <td>
+              
+                <a class="news-title" href="/news/n_2/">Interviewed by Business Times - Turning point for the taxi industry?</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row" style="width: 20%">Jul 07, 2023</th>
+            <td>
+              
+                My PhD student, Qian Shao, has been awarded the 2023 SMU Presidential Doctoral Fellowship.
+
+              
+            </td>
+          </tr>
+        
+      </table>
+    </div>
+  
+</div>
+
+    
+
+    <!-- Latest posts -->
+    
+
+    <!-- Selected papers -->
+    
+      <h2>
+        <a href="/publications/" style="color: inherit">selected publications</a>
+      </h2>
+      <div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">IJCAI-24</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="tan_ijcai_2024" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Enabling sustainable freight forwarding network via collaborative games</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Pang Jin
+            Tan, <em>Shih-Fen
+            Cheng</em>, and Richard
+            Chen
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Thirty-Third International Joint Conference on Artificial Intelligence</em> ,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2405.14198" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://arxiv.org/abs/2405.14198" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+        <a href="" class="btn btn-sm z-depth-0" role="button">Code</a>
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Freight forwarding plays a crucial role in facilitating global trade and logistics. However, as the freight forwarding market is extremely fragmented, freight forwarders often face the issue of not being able to fill the available shipping capacity. This recurrent issue motivates the creation of various freight forwarding networks that aim at exchanging capacities and demands so that the resource utilization of individual freight forwarders can be maximized. In this paper, we focus on how to design such a collaborative network based on collaborative game theory, with the Shapley value representing a fair scheme for profit sharing. Noting that the exact computation of Shapley values is intractable for large-scale real-world scenarios, we incorporate the observation that collaboration among two forwarders is only possible if their service routes and demands overlap. This leads to a new class of collaborative games called the Locally Collaborative Games (LCGs), where agents can only collaborate with their neighbors. We propose an efficient approach to compute Shapley values for LCGs, and numerically demonstrate that our approach significantly outperforms the state-of-the-art approach for a wide variety of network structures.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">tan_ijcai_2024</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Enabling sustainable freight forwarding network via collaborative games}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Thirty-Third International Joint Conference on Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Jeju, Korea}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tan, Pang Jin and Cheng, Shih-Fen and Chen, Richard}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">ICAPS-24</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="shao_icaps_2024" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Imitating cost-constrained behaviors in reinforcement learning</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Qian
+            Shao, Pradeep
+            Varakantham, and <em>Shih-Fen
+            Cheng</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Thirty-Fourth International Conference on Automated Planning and Scheduling</em> ,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2403.17456" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://ojs.aaai.org/index.php/ICAPS/article/view/31512" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+        <a href="https://github.com/SHAOQIAN12/CCIL" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Complex planning and scheduling problems have long been solved using various optimization or heuristic approaches. In recent years, imitation learning that aims to learn from expert demonstrations has been proposed as a viable alternative to solving these problems. Generally speaking, imitation learning is designed to learn either the reward (or preference) model or directly the behavioral policy by observing the behavior of an expert. Existing work in imitation learning and inverse reinforcement learning has focused on imitation primarily in unconstrained settings (e.g., no limit on fuel consumed by the vehicle). However, in many real-world domains, the behavior of an expert is governed not only by reward (or preference) but also by constraints. For instance, decisions on self-driving delivery vehicles are dependent not only on the route preferences/rewards (depending on past demand data) but also on the fuel in the vehicle and the time available. In such problems, imitation learning is challenging as decisions are not only dictated by the reward model but are also dependent on a cost-constrained model. In this paper, we provide multiple methods that match expert distributions in the presence of trajectory cost constraints through (a) Lagrangian-based method; (b) Meta-gradients to find a good trade-off between expected return and minimizing constraint violation; and (c) Cost-violation-based alternating gradient. We empirically show that leading imitation learning approaches imitate cost-constrained behaviors poorly and our meta-gradient-based approach achieves the best performance.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">shao_icaps_2024</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Imitating cost-constrained behaviors in reinforcement learning}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Thirty-Fourth International Conference on Automated Planning and Scheduling}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Banff, Alberta, Canada}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Shao, Qian and Varakantham, Pradeep and Cheng, Shih-Fen}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#009f36">
+            
+              <a href="https://www.sciencedirect.com/journal/habitat-international" rel="external nofollow noopener" target="_blank">Habitat</a>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="lee_habitat_2023" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Neighborhood retail amenities and taxi trip behavior: A natural experiment in Singapore</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Kwan Ok
+            Lee, and <em>Shih-Fen
+            Cheng</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Habitat International</em>,  2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://ink.library.smu.edu.sg/sis_research/7620/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>This paper investigates the impact of neighborhood retail amenities on taxi trip behavior. We exploit a natural experiment in Singapore where the government introduced a new policy that allows retail shops to operate in residential neighborhoods. We find that the introduction of retail amenities in residential neighborhoods leads to a significant increase in taxi trips. This increase is driven by the increase in the number of trips to and from the retail amenities. We also find that the increase in taxi trips is more pronounced during the weekends and evenings. Our findings suggest that the introduction of retail amenities in residential neighborhoods can have a significant impact on taxi trip behavior.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">lee_habitat_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Neighborhood retail amenities and taxi trip behavior: A natural experiment in Singapore}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{131}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{102714}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Habitat International}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Lee, Kwan Ok and Cheng, Shih-Fen}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#009f36">
+            
+              <a href="https://www.sciencedirect.com/journal/transportation-research-part-c-emerging-technologies" rel="external nofollow noopener" target="_blank">TRC</a>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="agarwal_trc_2022" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">The impact of ride-hail surge factors on taxi bookings</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Sumit
+            Agarwal, Ben
+            Charoenwong, <em>Shih-Fen
+            Cheng</em>, and
+        <span class="more-authors" title="click to view 1 more author" onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '1 more author' ? 'Jussi Keppo' : '1 more author';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '10');
+          ">1 more author</span>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Transportation Research Part C</em>,  2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://ink.library.smu.edu.sg/sis_research/6955/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>We study the role of ride-hailing surge factors on the allocative efficiency of taxis by combining a reduced-form estimation with structural analyses using machine-learning-based demand predictions. Where other research study the effect of entry on incumbent taxis, we use higher frequency granular data to study how location-time-specific surge factors affect taxi bookings to bound the effect of customer decisions while accounting for various confounding variables. We find that even in a unique market like Singapore, where incumbent taxi companies have app-based booking systems similar to those from ride-hailing companies like Uber, the estimated upper bound on the cross-platform substitution between ride-hailing services and taxi bookings is only 0.26. On the other hand, we show that incorporating surge price factor improves the precision of demand prediction by 12% to 15%. Our structural analyses based on a driver guidance system finds this improved accuracy in demand prediction reduces drivers’ vacant roaming times by 9.4% and increases the average number of trips per taxi by 2.6%, suggesting the price information is valuable across platforms, even if elasticities are low.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">agarwal_trc_2022</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{The impact of ride-hail surge factors on taxi bookings}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{136}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{103508}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Transportation Research Part C}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Agarwal, Sumit and Charoenwong, Ben and Cheng, Shih-Fen and Keppo, Jussi}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#009f36">
+            
+              <a href="https://pubsonline.informs.org/journal/trsc" rel="external nofollow noopener" target="_blank">TS</a>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="agussurja_ts_2019" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">A state aggregation approach for stochastic multi-period last-mile ride-sharing problem</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Lucas
+            Agussurja, <em>Shih-Fen
+            Cheng</em>, and Hoong Chuin
+            Lau
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Transportation Science</em>,  2019
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://ink.library.smu.edu.sg/sis_research/4326/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>The arrangement of last-mile services is playing an increasingly important role in making public transport more accessible. We study the use of ridesharing in satisfying last-mile demands with the assumption that demands are uncertain and come in batches. The most important contribution of our paper is a two-level Markov decision process framework that is capable of generating a vehicle-dispatching policy for the aforementioned service. We introduce state summarization, representative states, and sample-based cost estimation as major approximation techniques in making our approach scalable. We show that our approach converges and solution quality improves as sample size increases. We also apply our approach to a series of case studies derived from a real-world public transport data set in Singapore. By examining three distinctive demand profiles, we show that our approach performs best when the distribution is less uniform and the planning area is large. We also demonstrate that a parallel implementation can further improve the performance of our solution approach.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">agussurja_ts_2019</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A state aggregation approach for stochastic multi-period last-mile ride-sharing problem}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{53(1)}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{148--166}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Transportation Science}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Agussurja, Lucas and Cheng, Shih-Fen and Lau, Hoong Chuin}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2019}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+    
+
+    <!-- Social -->
+    
+      <div class="social">
+        <div class="contact-icons">
+  <a href="mailto:%63%68%65%6E%67%73%66@%75%6D%69%63%68.%65%64%75" title="email"><i class="fa-solid fa-envelope"></i></a>
+
+
+
+
+
+  <a href="https://scholar.google.com/citations?user=zEHb5vMAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+  <a href="https://www.linkedin.com/in/shih-fen-cheng" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a href="/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss"></i></a>
+
+
+</div>
+
+        <div class="contact-note"></div>
+      </div>
+    
+  </article>
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2024
+      Shih-Fen
+      
+      Cheng. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+
+      
+      
+        Last updated: July 15, 2024.
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+<!-- Bootstrap Table -->
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?b7816bd189846d29eded8745f9c4cf77"></script>
+<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+    
+  
+    <!-- MathJax -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          tags: 'ams',
+        },
+      };
+    </script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+    
+
+    
+
+
+    
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    /*
+     * This JavaScript code has been adapted from the article
+     * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar,
+     * published on the website https://css-tricks.com on the 7th of May, 2014.
+     * Couple of changes were made to the original code to make it compatible
+     * with the `al-foio` theme.
+     */
+    const progressBar = $('#progress');
+    /*
+     * We set up the bar after all elements are done loading.
+     * In some cases, if the images in the page are larger than the intended
+     * size they'll have on the page, they'll be resized via CSS to accomodate
+     * the desired size. This mistake, however, breaks the computations as the
+     * scroll size is computed as soon as the elements finish loading.
+     * To account for this, a minimal delay was introduced before computing the
+     * values.
+     */
+    window.onload = function () {
+      setTimeout(progressBarSetup, 50);
+    };
+    /*
+     * We set up the bar according to the browser.
+     * If the browser supports the progress element we use that.
+     * Otherwise, we resize the bar thru CSS styling
+     */
+    function progressBarSetup() {
+      if ('max' in document.createElement('progress')) {
+        initializeProgressElement();
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getCurrentScrollPosition() });
+        });
+        $(window).on('resize', initializeProgressElement);
+      } else {
+        resizeProgressBar();
+        $(document).on('scroll', resizeProgressBar);
+        $(window).on('resize', resizeProgressBar);
+      }
+    }
+    /*
+     * The vertical scroll position is the same as the number of pixels that
+     * are hidden from view above the scrollable area. Thus, a value > 0 is
+     * how much the user has scrolled from the top
+     */
+    function getCurrentScrollPosition() {
+      return $(window).scrollTop();
+    }
+
+    function initializeProgressElement() {
+      let navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      progressBar.css({ top: navbarHeight });
+      progressBar.attr({
+        max: getDistanceToScroll(),
+        value: getCurrentScrollPosition(),
+      });
+    }
+    /*
+     * The offset between the html document height and the browser viewport
+     * height will be greater than zero if vertical scroll is possible.
+     * This is the distance the user can scroll
+     */
+    function getDistanceToScroll() {
+      return $(document).height() - $(window).height();
+    }
+
+    function resizeProgressBar() {
+      progressBar.css({ width: getWidthPercentage() + '%' });
+    }
+    // The scroll ratio equals the percentage to resize the bar
+    function getWidthPercentage() {
+      return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+    }
+  </script>
+
+
+    
+
+    
+
+    
+
+    <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+<script>
+  
+    addBackToTop();
+  
+</script>
+
+    
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?601a2d3465e2a52bec38b600518d5f70"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script>
+    let theme = determineComputedTheme();
+    const ninjaKeys = document.querySelector('ninja-keys');
+
+    if (theme === 'dark') {
+      ninjaKeys.classList.add('dark');
+    } else {
+      ninjaKeys.classList.remove('dark');
+    }
+
+    const openSearchModal = () => {
+      // collapse navbarNav if expanded on mobile
+      const $navbarNav = $('#navbarNav');
+      if ($navbarNav.hasClass('show')) {
+        $navbarNav.collapse('hide');
+      }
+      ninjaKeys.open();
+    };
+  </script>
+  <script>
+    // get the ninja-keys element
+    const ninja = document.querySelector('ninja-keys');
+
+    // add the home and posts menu items
+    ninja.data = [{
+        id: "nav-about",
+        title: "about",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "/";
+        },
+      },{id: "nav-cv",
+              title: "CV",
+              description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/cv/";
+              },
+            },{id: "nav-publications",
+              title: "Publications",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/publications/";
+              },
+            },{id: "nav-projects",
+              title: "Projects",
+              description: "A growing collection of your cool projects.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/projects/";
+              },
+            },{id: "nav-teaching",
+              title: "Teaching",
+              description: "Materials for courses you taught. Replace this text with your description.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/teaching/";
+              },
+            },{id: "nav-people",
+              title: "People",
+              description: "members of the group",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/people/";
+              },
+            },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+          
+            // TODO: fix the svg icon position for external posts
+            // title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="2rem" height="2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+            title: "Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra",
+          
+          description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+          section: "Posts",
+          handler: () => {
+            
+              window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+            
+          },
+        },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+          
+            // TODO: fix the svg icon position for external posts
+            // title: 'Displaying External Posts on Your al-folio Blog <svg width="2rem" height="2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+            title: "Displaying External Posts on Your al-folio Blog",
+          
+          description: "",
+          section: "Posts",
+          handler: () => {
+            
+              window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+            
+          },
+        },{id: "news-my-phd-students-qian-shao-and-pang-jin-tan-have-both-been-awarded-the-2024-smu-presidential-doctoral-fellowship",
+          title: 'My PhD students, Qian Shao and Pang Jin Tan, have both been awarded the 2024 SMU Presidential Doctoral Fellowship.',
+          description: "",
+          section: "News",},{id: "news-paper-accepted-at-ijcai-24",
+          title: 'Paper accepted at IJCAI-24',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/n_5/";
+            },},{id: "news-paper-accepted-at-icaps-24",
+          title: 'Paper accepted at ICAPS-24',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/n_4/";
+            },},{id: "news-interviewed-by-business-times-how-does-having-more-high-mileage-phvs-fit-our-aim-to-reduce-traffic-snarls",
+          title: 'Interviewed by Business Times - How does having more high-mileage PHVs fit our aim to reduce traffic snarls?',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/n_3/";
+            },},{id: "news-interviewed-by-business-times-turning-point-for-the-taxi-industry",
+          title: 'Interviewed by Business Times - Turning point for the taxi industry?',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/n_2/";
+            },},{id: "news-my-phd-student-qian-shao-has-been-awarded-the-2023-smu-presidential-doctoral-fellowship",
+          title: 'My PhD student, Qian Shao, has been awarded the 2023 SMU Presidential Doctoral Fellowship.',
+          description: "",
+          section: "News",},{id: "projects-project-1",
+              title: 'project 1',
+              description: "with background image",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/1_project/";
+                },},{id: "projects-project-2",
+              title: 'project 2',
+              description: "a project with a background image and giscus comments",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/2_project/";
+                },},{id: "projects-project-3-with-very-long-name",
+              title: 'project 3 with very long name',
+              description: "a project that redirects to another website",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/3_project/";
+                },},{id: "projects-project-4",
+              title: 'project 4',
+              description: "another without an image",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/4_project/";
+                },},{id: "projects-project-5",
+              title: 'project 5',
+              description: "a project with a background image",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/5_project/";
+                },},{id: "projects-project-6",
+              title: 'project 6',
+              description: "a project with no image",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/6_project/";
+                },},{id: "projects-project-7",
+              title: 'project 7',
+              description: "with background image",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/7_project/";
+                },},{id: "projects-project-8",
+              title: 'project 8',
+              description: "an other project with a background image and giscus comments",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/8_project/";
+                },},{id: "projects-project-9",
+              title: 'project 9',
+              description: "another project with an image 🎉",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/9_project/";
+                },},{
+            id: 'socials-email',
+            title: 'Send email',
+            section: 'Socials',
+            handler: () => {
+              window.open("mailto:%63%68%65%6E%67%73%66@%75%6D%69%63%68.%65%64%75", "_blank");
+            },
+          },{
+            id: 'socials-google-scholar',
+            title: 'Google Scholar',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://scholar.google.com/citations?user=zEHb5vMAAAAJ", "_blank");
+            },
+          },{
+            id: 'socials-linkedin',
+            title: 'LinkedIn',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://www.linkedin.com/in/shih-fen-cheng", "_blank");
+            },
+          },{
+            id: 'socials-rss',
+            title: 'RSS Feed',
+            section: 'Socials',
+            handler: () => {
+              window.open("/feed.xml", "_blank");
+            },
+          },{
+          id: 'light-theme',
+          title: 'Change theme to light',
+          description: 'Change the theme of the site to Light',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("light");
+          },
+        },
+        {
+          id: 'dark-theme',
+          title: 'Change theme to dark',
+          description: 'Change the theme of the site to Dark',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("dark");
+          },
+        },
+        {
+          id: 'system-theme',
+          title: 'Use system default theme',
+          description: 'Change the theme of the site to System Default',
+          section: 'Theme',
+          handler: () => {
+            setThemeSetting("system");
+          },
+        },];
+  </script>
+
+
+    <script src="/assets/js/shortcut-key.js"></script>
+  </body>
+</html>

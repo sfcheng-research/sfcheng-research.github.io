@@ -1,0 +1,209 @@
+{
+  "basics": {
+    "name": "Shih-Fen Cheng",
+    "label": "Professor / Scientist",
+    "image": "",
+    "email": "chengsf@umich.edu",
+    "phone": "+65 6828-0526",
+    "url": "https://sfcheng75.github.io/",
+    "summary": "Principal Research Scientist at Amazon; Associate Professor of Computer Science at Singapore Management University",
+    "location": {
+      "address": "80 Stamford Road",
+      "postalCode": "178902",
+      "city": "Singapore",
+      "countryCode": "SG",
+      "region": "Singapore"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "",
+        "url": "https://twitter.com/sfcheng"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Industrial and Operations Engineering, University of Michigan",
+      "location": "Ann Arbor, Michigan",
+      "url": "https://ioe.engin.umich.edu/",
+      "area": "Operations Research & Artificial Intelligence",
+      "studyType": "Doctor of Philosophy",
+      "startDate": "2001-09-01",
+      "endDate": "2006-10-31",
+      "score": "10",
+      "courses": ["Dissertation: <a href='/assets/pdf/thesis_compact_sfcheng.pdf' target='_blank'>Game-theoretic Approaches for Complex Systems Optimization</a>.", "Committee: <a href='http://www-personal.umich.edu/~rlsmith/' target='_blank'>Robert L. Smith</a> (Co-Chair, IOE), <a href='https://strategicreasoning.org/michael-p-wellman/' target='_blank'>Michael P. Wellman</a> (Co-Chair, CSE), <a href='http://www-personal.umich.edu/~mepelman/' target='_blank'>Marina Epelman</a>, <a href='https://web.eecs.umich.edu/~baveja/' target='_blank'>Satinder Singh</a>."]
+    },
+    {
+      "institution": "Mechanical Engineering, National Taiwan University",
+      "location": "Taipei, Taiwan",
+      "url": "http://www.me.ntu.edu.tw/main.php?site_id=1",
+      "studyType": "Bachelor of Science in Engineering",
+      "startDate": "1993-09-01",
+      "endDate": "1997-06-01",
+      "score": "10"
+    }
+  ],  
+  "work": [
+    {
+      "name": "Amazon",
+      "position": "Principal Research Scientist",
+      "url": "https://www.amazon.science/",
+      "startDate": "2024-07-01",
+      "endDate": "",
+      "summary": "Working on optimizing delivery experience and logistics operations."
+    },
+    {
+      "name": "School of Computing and Information Systems<br>Singapore Management University",
+      "position": "Associate Professor of Computer Science",
+      "url": "https://computing.smu.edu.sg/",
+      "startDate": "2015-01-01",
+      "endDate": "",
+      "summary": ""
+    },
+    {
+      "name": "Urban Institute<br>Singapore Management University",
+      "position": "Urban Fellow",
+      "url": "https://urban.smu.edu.sg/",
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "summary": ""
+    },
+    {
+      "name": "Fujitsu-SMU Urban Computing and Engineering Corp Lab<br>Singapore Management University",
+      "position": "Deputy Director (Research)",
+      "url": "https://unicen.smu.edu.sg/",
+      "startDate": "2014-10-01",
+      "endDate": "2020-09-30",
+      "highlights": [
+        "A S$27m research lab jointly funded by Fujitsu (Japan) and National Research Foundation (Singapore).",
+        "Focus on research with real-world impact in urban mobility, logistics, and crowd management."
+      ]
+    },    
+    {
+      "name": "School of Computing and Information Systems<br>Singapore Management University",
+      "position": "Assistant Professor of Information Systems",
+      "url": "https://computing.smu.edu.sg/",
+      "startDate": "2006-12-01",
+      "endDate": "2014-12-31",
+      "summary": ""
+    },
+    {
+      "name": "University of Michigan",
+      "position": "Graduate Student Instructor",
+      "startDate": "2006-01-01",
+      "endDate": "2006-04-31",
+      "summary": "Teaching assistant for IOE 310: Introduction to Optimization Methods."
+    },
+    { "name": "University of Michigan",
+      "position": "Graduate Student Research Assistant",
+      "startDate": "2001-09-01",
+      "endDate": "2006-07-31",
+      "highlights": ["Member of Strategic Reasoning Group (PI: Michael P. Wellman).", "Member of Dynamic Systems Optimization Lab (PI: Robert L. Smith)."]
+    },
+    {
+      "name": "OLE Technology Corp",
+      "position": "Software Engineer",
+      "url": "",
+      "startDate": "1999-07-01",
+      "endDate": "2001-06-30",
+      "summary": "Software startup company on Product Life Cycle Management system."
+    },
+    {
+      "name": "Taiwan Army",
+      "position": "Lecturer, Second Lieutenant",
+      "startDate": "1997-07-01",
+      "endDate": "1999-06-30",
+      "summary": "Compulsory Military Service"
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "url": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "",
+      "url": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "",
+      "url": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "",
+      "url": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "",
+      "url": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    },
+    {
+      "title": "Finalist, George B. Dantzig Dissertation Award",
+      "url": "https://www.informs.org/Recognizing-Excellence/Award-Recipients/Shih-Fen-Cheng",
+      "date": "2007",
+      "awarder": "INFORMS",
+      "summary": "Best dissertation in any area of operations research and the management sciences that is innovative and relevant to practice. Winning Material: Game-theoretic Approaches for Complex Systems Optimization."
+    },
+    {
+      "title": "Wilson Prize",
+      "url": "",
+      "date": "2005",
+      "awarder": "Department of Industrial and Operations Engineering, University of Michigan",
+      "summary": "Best student paper in manufacturing systems: Sampled fictitious play for multi-action stochastic dynamic programs."
+    },
+    {
+      "title": "President's Award",
+      "url": "",
+      "date": "1994",
+      "awarder": "Department of Mechnical Engineering, National Taiwan University",
+      "summary": "Top 5% of the cohort."
+    }
+  ],
+  "publications": [
+    {
+      "name": "See Complete Listing Here.",
+      "url": "/publications",
+      "summary": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Physics",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Quantum Mechanics",
+        "Quantum Computing",
+        "Quantum Information",
+        "Quantum Cryptography",
+        "Quantum Communication",
+        "Quantum Teleportation"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Quantum Computing",
+      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
+    }
+  ]
+}

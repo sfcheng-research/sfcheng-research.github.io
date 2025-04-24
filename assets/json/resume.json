@@ -1,5 +1,5 @@
 {
-  "basics": {
+  "Basics": {
     "name": "Shih-Fen Cheng",
     "label": "Professor / Scientist",
     "image": "",
@@ -22,7 +22,7 @@
       }
     ]
   },
-  "education": [
+  "Education": [
     {
       "institution": "Industrial and Operations Engineering, University of Michigan",
       "location": "Ann Arbor, Michigan",
@@ -44,9 +44,10 @@
       "score": "10"
     }
   ],  
-  "work": [
+  "Work": [
     {
       "name": "Amazon",
+      "location": "Singapore / Japan",
       "position": "Principal Research Scientist",
       "url": "https://www.amazon.science/",
       "startDate": "2024-07-01",
@@ -55,6 +56,7 @@
     },
     {
       "name": "School of Computing and Information Systems<br>Singapore Management University",
+      "location": "Singapore",
       "position": "Associate Professor of Computer Science",
       "url": "https://computing.smu.edu.sg/",
       "startDate": "2015-01-01",
@@ -63,6 +65,7 @@
     },
     {
       "name": "Urban Institute<br>Singapore Management University",
+      "location": "Singapore",
       "position": "Urban Fellow",
       "url": "https://urban.smu.edu.sg/",
       "startDate": "2023-08-01",
@@ -71,6 +74,7 @@
     },
     {
       "name": "Fujitsu-SMU Urban Computing and Engineering Corp Lab<br>Singapore Management University",
+      "location": "Singapore",
       "position": "Deputy Director (Research)",
       "url": "https://unicen.smu.edu.sg/",
       "startDate": "2014-10-01",
@@ -82,6 +86,7 @@
     },    
     {
       "name": "School of Computing and Information Systems<br>Singapore Management University",
+      "location": "Singapore",
       "position": "Assistant Professor of Information Systems",
       "url": "https://computing.smu.edu.sg/",
       "startDate": "2006-12-01",
@@ -90,12 +95,14 @@
     },
     {
       "name": "University of Michigan",
+      "location": "Ann Arbor, Michigan",
       "position": "Graduate Student Instructor",
       "startDate": "2006-01-01",
       "endDate": "2006-04-31",
       "summary": "Teaching assistant for IOE 310: Introduction to Optimization Methods."
     },
     { "name": "University of Michigan",
+      "location": "Ann Arbor, Michigan",
       "position": "Graduate Student Research Assistant",
       "startDate": "2001-09-01",
       "endDate": "2006-07-31",
@@ -103,21 +110,22 @@
     },
     {
       "name": "OLE Technology Corp",
+      "location": "Taiwan",
       "position": "Software Engineer",
-      "url": "",
       "startDate": "1999-07-01",
       "endDate": "2001-06-30",
       "summary": "Software startup company on Product Life Cycle Management system."
     },
     {
       "name": "Taiwan Army",
+      "location": "Taiwan",
       "position": "Lecturer, Second Lieutenant",
       "startDate": "1997-07-01",
       "endDate": "1999-06-30",
       "summary": "Compulsory Military Service"
     }
   ],
-  "awards": [
+  "Awards_&_Honors": [
     {
       "title": "Best Student Paper Award",
       "url": "https://web.archive.org/web/20211020105331/https://www.icss2021.servicescienceglobal.org/competitions/",
@@ -157,7 +165,7 @@
       "url": "https://ink.library.smu.edu.sg/sis_research/3181/",
       "date": "2016",
       "awarder": "Nineteenth ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW-16)",
-      "summary": "Top 5% of all accepted papers. Winning material: <a href='https://ink.library.smu.edu.sg/sis_research/3181/'>Campus-scale mobile crowd-tasking: Deployment and behavioral insights</>."
+      "summary": "Top 5% of all accepted papers. Winning material: <a href='https://ink.library.smu.edu.sg/sis_research/3181/'>Campus-scale mobile crowd-tasking: Deployment and behavioral insights</a>."
     },
     {
       "title": "Lee Kong Chian Fellowship for Research Excellence",
@@ -185,7 +193,7 @@
       "summary": "Top 5% of the cohort."
     }
   ],
-  "grants": [
+  "Research_Grants": [
     {
       "position": "PI",
       "title": "Enabling Sustainable Point-to-Point Transport Service via Behavioral Game Theory",
@@ -210,7 +218,7 @@
       "startDate": "2021-08-01",
       "endDate": "2024-12-31",
       "amount": "S$579,318",
-      "with": "Sumit Agarwal, Ben Charoenwong, and Jussi Keppo"
+      "with": "Sumit Agarwal, Ben Charoenwong, and Jussi Keppo (all NUS Business School) as Co-PIs"
     },
     {
       "position": "PI",
@@ -322,35 +330,284 @@
       "amount": "S$47,266"
     }
   ],
-  "publications": [
+  "Publications": [
     {
       "name": "See Complete Listing Here.",
       "url": "/publications",
       "summary": ""
     }
   ],
-  "interests": [
+  "Research_Areas": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Urban computing and sustainable urban operations",
+      "icon": "fa-solid fa-caret-right"
+    },
+    {
+      "name": "Mobility-on-demand systems",
+      "icon": "fa-solid fa-caret-right"
+    },
+    {
+      "name": "Mobile crowdsourcing",
+      "icon": "fa-solid fa-caret-right"
+    },
+    {
+      "name": "Last-mile logistics",
+      "icon": "fa-solid fa-caret-right"
+    },
+    {
+      "name": "Agent-based modeling and simulation",
+      "icon": "fa-solid fa-caret-right"
+    },
+    {
+      "name": "Large-scale optimization models and computational methods",
+      "icon": "fa-solid fa-caret-right"
     }
   ],
-  "projects": [
+  "Thesis_Chair_(PhD)": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Jian Bin Liew",
+      "thesisTitle": "TBD",
+      "startDate": "2024-01-01",
+      "url": "https://www.linkedin.com/in/jianbinliew/"
+    },
+    {
+      "name": "Pang Jin Tan",
+      "thesisTitle": "Collaborative logistics: Theory and Practice of Platform and Incentive Design",
+      "startDate": "2021-08-01",
+      "note": "Awarded SMU Presidential Doctoral Fellowship, 2024",
+      "url": "https://pangjin-tan.github.io/"
+    },
+    {
+      "name": "Qian Shao",
+      "thesisTitle": "Real-world Considerations in Human Decision Making",
+      "startDate": "2020-08-01",
+      "note": "Awarded SMU Presidential Doctoral Fellowship, 2023, 2024",
+      "url": "https://www.linkedin.com/in/qian-shao-9422b7265/"
+    },
+    {
+      "name": "Mengyu Ji",
+      "thesisTitle": "Analyzing Taxi Drivers' Decision-making and Recommending Strategies for Enhanced Performance: A Data-driven Approach",
+      "startDate": "2019-08-01",
+      "endDate": "2023-07-31",
+      "position": "Assistant Professor, Luoyang Institute of Science and Technology, China"
+    },
+    {
+      "name": "Chung-Kyun Han",
+      "thesisTitle": "Efficient Algorithms for Trajectory-Aware Mobile Crowdsourcing",
+      "startDate": "2016-01-01",
+      "endDate": "2020-12-31",
+      "url": "https://chungkyun-han.github.io/",
+      "note": "Awarded SMU Presidential Doctoral Fellowship, 2020",
+      "position": "Technical Account Manager, Gurobi Optimization"
+    },
+    {
+      "name": "Larry Lin",
+      "thesisTitle": "Modeling Movement Decisions in Networks: A Discrete Choice Model Approach",
+      "startDate": "2014-01-01",
+      "endDate": "2018-12-31",
+      "url": "https://www.linkedin.com/in/larry-lin-8354a649/",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>",
+      "position": "Data Scientist, Grab"
+    },
+    {
+      "name": "Cen Chen",
+      "thesisTitle": "Recommending Personalized Schedules in Urban Environments",
+      "startDate": "2013-01-01",
+      "endDate": "2017-06-30",
+      "url": "https://sites.google.com/site/chencenpersonalwebsite/",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>",
+      "position": "Associate Professor, School of Data Science and Engineering, East China Normal University"
+    },
+    {
+      "name": "Jiali Du",
+      "thesisTitle": "Proactive and Reactive Strategies to Handle Surges in Urban Crowds",
+      "startDate": "2012-07-01",
+      "endDate": "2017-06-30",
+      "url": "https://www.linkedin.com/in/jiali-du/",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>",
+      "position": "Data Scientist, Booking.com"
+    }
+  ],
+  "Thesis_Chair_(EngD)": [
+    {
+      "name": "Nurul Asyikeen Azhar",
+      "thesisTitle": "Enabling Sustainable Mining via AI-based Approaches",
+      "startDate": "2020-08-01",
+      "endDate": "2024-05-31",
+      "url": "https://www.linkedin.com/in/nurul-asyikeen-azhar/",
+      "note": "Awarded EDB Scholarship",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/aldygunawan/'>Aldy Gunawan</a>",
+      "position": "Senior Data Scientist, Rio Tinto"
+    }
+  ],
+  "Thesis_Chair_(Master)": [
+    {
+      "name": "Duc Thien Nguyen",
+      "thesisTitle": "Fair Cost Sharing Auction Mechanisms in Last Mile Ridesharing",
+      "startDate": "2011-03-01",
+      "endDate": "2014-07-01",
+      "url": "https://www.linkedin.com/in/thien-nguyen-duc-48354a4a/",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>",
+      "position": "Research Scientist, IBM"
+    },
+    {
+      "name": "Long Foong Liow",
+      "thesisTitle": "Go Niche or Go Home: Influence Maximization In the Presence of Strong Opponent",
+      "startDate": "2009-08-01",
+      "endDate": "2012-06-01",
+      "url": "https://www.linkedin.com/in/mike-liow-2998x4/",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>",
+      "position": "Manager, Infocomm Development Authority of Singapore"
+    }
+  ],
+  "Thesis_Committee_(PhD)": [
+    {
+      "name": "Dexun Li",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
+    },
+    {
+      "name": "Jingfeng Yang",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
+    },
+    {
+      "name": "Joe Waldy",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
+    },
+    {
+      "name": "Rajiv Kumar",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
+    },
+    {
+      "name": "Meghna Lowalekar",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
+    },
+    {
+      "name": "Tanvi Verma",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a> and <a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
+    },
+    {
+      "name": "Na Fu",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
+    }
+  ],
+  "Professional_Activities": [
+    {
+      "type": "SPC",
+      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
+      "year": "2023, 2024, 2025"
+    },
+    {
+      "type": "SPC",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+      "url": "https://www.ifaamas.org/",
+      "year": "2018, 2019, 2023, 2024, 2025"
+    },
+    {
+      "type": "SPC",
+      "name": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "year": "2020, 2024, 2025"
+    },
+    {
+      "type": "SPC",
+      "name": "AAAI Conference on Artificial Intelligence (AAAI), Special Track on AI for Social Impact",
+      "year": "2024, 2025"
+    },
+    {
+      "type": "SPC",
+      "name": "AAAI Conference on Human Computation and Crowdsourcing (HCOMP)",
+      "year": "2022"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Automated Planning and Scheduling (ICAPS)",
+      "year": "2021 - 2024"
+    },
+    {
+      "type": "PC",
+      "name": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "year": "2011, 2012, 2016, 2017, 2019, 2021 - 2023"
+    },
+    {
+      "type": "PC",
+      "name": "AAAI Conference on Artificial Intelligence, Special Track on AI for Social Impact",
+      "year": "2020 - 2023"
+    },
+    {
+      "type": "PC",
+      "name": "AAAI Conference on Human Computation and Crowdsourcing (HCOMP)",
+      "year": "2019 - 2021"
+    },
+    {
+      "type": "PC",
+      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
+      "year": "2013, 2016, 2017, 2020"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+      "url": "https://www.ifaamas.org/",
+      "year": "2011, 2013 - 2017"
+    },
+    {
+      "type": "PC",
+      "name": "26th World Congress on Intelligent Transport Systems (ITS World Congress)",
+      "year": "2019"
+    },
+    {
+      "type": "PC",
+      "name": "Winter Simulation Conference (WSC)",
+      "year": "2018"
+    },
+    {
+      "type": "PC",
+      "name": "International Workshop on Agents in Traffic and Transportation (ATT)",
+      "year": "2012 @AAMAS, 2014 @AAMAS, 2016 @IJCAI, 2018 @IJCAI"
+    },
+    {
+      "type": "PC",
+      "name": "ACM Symposium on Applied Computing (ACM SAC)",
+      "year": "2015, 2016, 2018"
+    },
+    {
+      "type": "PC",
+      "name": "IEEE International Conference on Agents (ICA)",
+      "year": "2016, 2017"
+    },
+    {
+      "type": "PC",
+      "name": "Duke Forest Conference",
+      "year": "2016"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Principles of Practice in Multi-Agent Systems (PRIMA)",
+      "year": "2009 - 2015"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Electronic Commerce (ICEC)",
+      "year": "2012, 2013"
+    },
+    {
+      "type": "PC",
+      "name": "Annual IEEE Conference on Automation Science and Engineering (CASE)",
+      "year": "2010"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Computational Intelligence and Security",
+      "year": "2008"
+    },
+    {
+      "type": "EB",
+      "name": "Senior Editor, Electronic Commerce Research and Applications",
+      "year": "2019 - 2025"
+    },
+    {
+      "type": "EB",
+      "name": "Associate Editor, Electronic Commerce Research and Applications",
+      "year": "2013 - 2019"
     }
   ]
 }
+

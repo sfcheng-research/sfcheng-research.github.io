@@ -94,11 +94,11 @@
       
         <a class="navbar-brand title font-weight-lighter" href="/">
           
+            Shih-Fen
             
-              <span class="font-weight-bold">Shih-Fen</span>
             
+              <span class="font-weight-bold">Cheng</span>
             
-            Cheng
           
         </a>
       
@@ -116,7 +116,7 @@
 
           <!-- About -->
           <li class="nav-item ">
-            <a class="nav-link" href="/">about
+            <a class="nav-link" href="/">Home
               
             </a>
           </li>
@@ -142,6 +142,7 @@
           
             
               
+                
                 <li class="nav-item ">
                   
                   <a class="nav-link" href="/cv/">CV
@@ -153,9 +154,10 @@
           
             
               
+                
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/publications/">Publications
+                  <a class="nav-link" href="/Publications/">Publications
                     
                   </a>
                 </li>
@@ -164,6 +166,7 @@
           
             
               
+                
                 <li class="nav-item ">
                   
                   <a class="nav-link" href="/projects/">Projects
@@ -175,6 +178,7 @@
           
             
               
+                
                 <li class="nav-item ">
                   
                   <a class="nav-link" href="/teaching/">Teaching
@@ -186,6 +190,7 @@
           
             
               
+                
                 <li class="nav-item ">
                   
                   <a class="nav-link" href="/people/">People
@@ -295,14 +300,14 @@
     
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
-      © Copyright 2024
+      © Copyright 2025
       Shih-Fen
       
       Cheng. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       
       
-        Last updated: July 17, 2024.
+        Last updated: April 24, 2025.
       
     </div>
   </footer>
@@ -354,7 +359,7 @@
 
 <!-- Load Common JS -->
 <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
-<script defer src="/assets/js/common.js?b7816bd189846d29eded8745f9c4cf77"></script>
+<script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script>
 <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
 
 <!-- Jupyter Open External Links New Tab -->
@@ -387,6 +392,18 @@
     
 
     
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ5VXZ2ERF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-MQ5VXZ2ERF');
+  </script>
+
+
 
 
     
@@ -474,21 +491,21 @@
 
     
 
-    <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
-<script>
-  
+    
+  <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
     addBackToTop();
-  
-</script>
+  </script>
+
 
     
   <script type="module" src="/assets/js/search/ninja-keys.min.js?601a2d3465e2a52bec38b600518d5f70"></script>
   <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
   <script>
-    let theme = determineComputedTheme();
+    let searchTheme = determineComputedTheme();
     const ninjaKeys = document.querySelector('ninja-keys');
 
-    if (theme === 'dark') {
+    if (searchTheme === 'dark') {
       ninjaKeys.classList.add('dark');
     } else {
       ninjaKeys.classList.remove('dark');
@@ -509,15 +526,15 @@
 
     // add the home and posts menu items
     ninja.data = [{
-        id: "nav-about",
-        title: "about",
+        id: "nav-home",
+        title: "Home",
         section: "Navigation",
         handler: () => {
           window.location.href = "/";
         },
       },{id: "nav-cv",
               title: "CV",
-              description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+              description: "",
               section: "Navigation",
               handler: () => {
                 window.location.href = "/cv/";
@@ -527,18 +544,18 @@
               description: "",
               section: "Navigation",
               handler: () => {
-                window.location.href = "/publications/";
+                window.location.href = "/Publications/";
               },
             },{id: "nav-projects",
               title: "Projects",
-              description: "A growing collection of your cool projects.",
+              description: "",
               section: "Navigation",
               handler: () => {
                 window.location.href = "/projects/";
               },
             },{id: "nav-teaching",
               title: "Teaching",
-              description: "Materials for courses you taught. Replace this text with your description.",
+              description: "",
               section: "Navigation",
               handler: () => {
                 window.location.href = "/teaching/";
@@ -550,77 +567,48 @@
               handler: () => {
                 window.location.href = "/people/";
               },
-            },{id: "news-my-phd-students-qian-shao-and-pang-jin-tan-have-both-been-awarded-the-2024-smu-presidential-doctoral-fellowship",
-          title: 'My PhD students, Qian Shao and Pang Jin Tan, have both been awarded the 2024 SMU Presidential Doctoral Fellowship.',
-          description: "",
-          section: "News",},{id: "news-paper-accepted-at-ijcai-24",
-          title: 'Paper accepted at IJCAI-24',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/n_5/";
-            },},{id: "news-paper-accepted-at-icaps-24",
-          title: 'Paper accepted at ICAPS-24',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/n_4/";
-            },},{id: "news-interviewed-by-business-times-how-does-having-more-high-mileage-phvs-fit-our-aim-to-reduce-traffic-snarls",
-          title: 'Interviewed by Business Times - How does having more high-mileage PHVs fit our aim to reduce traffic snarls?',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/n_3/";
-            },},{id: "news-interviewed-by-business-times-turning-point-for-the-taxi-industry",
-          title: 'Interviewed by Business Times - Turning point for the taxi industry?',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/n_2/";
-            },},{id: "news-my-phd-student-qian-shao-has-been-awarded-the-2023-smu-presidential-doctoral-fellowship",
-          title: 'My PhD student, Qian Shao, has been awarded the 2023 SMU Presidential Doctoral Fellowship.',
-          description: "",
-          section: "News",},{id: "projects-project-1",
-              title: 'project 1',
-              description: "with background image",
+            },{id: "news-my-phd-student-qian-shao-has-been-awarded-the-2023-smu-presidential-doctoral-fellowship",
+              title: 'My PhD student, Qian Shao, has been awarded the 2023 SMU Presidential Doctoral...',
+              description: "",
+              section: "News",},{id: "news-interviewed-by-business-times-turning-point-for-the-taxi-industry",
+              title: 'Interviewed by Business Times - Turning point for the taxi industry?',
+              description: "",
+              section: "News",handler: () => {
+                  window.location.href = "/news/n_2/";
+                },},{id: "news-interviewed-by-business-times-how-does-having-more-high-mileage-phvs-fit-our-aim-to-reduce-traffic-snarls",
+              title: 'Interviewed by Business Times - How does having more high-mileage PHVs fit our...',
+              description: "",
+              section: "News",handler: () => {
+                  window.location.href = "/news/n_3/";
+                },},{id: "news-paper-accepted-at-icaps-24",
+              title: 'Paper accepted at ICAPS-24',
+              description: "",
+              section: "News",handler: () => {
+                  window.location.href = "/news/n_4/";
+                },},{id: "news-paper-accepted-at-ijcai-24",
+              title: 'Paper accepted at IJCAI-24',
+              description: "",
+              section: "News",handler: () => {
+                  window.location.href = "/news/n_5/";
+                },},{id: "news-started-as-principal-research-scientist-at-amazon-on-leave-from-smu",
+              title: 'Started as Principal Research Scientist at Amazon. (On leave from SMU.)',
+              description: "",
+              section: "News",},{id: "news-my-phd-students-qian-shao-and-pang-jin-tan-have-both-been-awarded-the-2024-smu-presidential-doctoral-fellowship",
+              title: 'My PhD students, Qian Shao and Pang Jin Tan, have both been awarded...',
+              description: "",
+              section: "News",},{id: "news-our-paper-quot-information-salience-and-vehicle-idling-behavior-evidence-from-taxis-in-singapore-quot-with-sumit-agarwal-jussi-keppo-long-wang-and-zoe-yang-is-accepted-at-the-review-of-economics-and-statistics",
+              title: 'Our paper, &quot;Information Salience and Vehicle Idling Behavior: Evidence from Taxis in Singapore,&quot;...',
+              description: "",
+              section: "News",},{id: "projects-driver-guidance-system-dgs-for-taxi-drivers",
+              title: 'Driver Guidance System (DGS) for Taxi Drivers',
+              description: "DGS enables taxi drivers to be more productive by digesting real-time demands and competitions.",
               section: "Projects",handler: () => {
-                  window.location.href = "/projects/1_project/";
-                },},{id: "projects-project-2",
-              title: 'project 2',
-              description: "a project with a background image and giscus comments",
+                  window.location.href = "/projects/1_dgs/";
+                },},{id: "projects-predictive-mobile-crowdsourcing",
+              title: 'Predictive Mobile Crowdsourcing',
+              description: "Getting things done by leveraging the power of crowd.",
               section: "Projects",handler: () => {
-                  window.location.href = "/projects/2_project/";
-                },},{id: "projects-project-3-with-very-long-name",
-              title: 'project 3 with very long name',
-              description: "a project that redirects to another website",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/3_project/";
-                },},{id: "projects-project-4",
-              title: 'project 4',
-              description: "another without an image",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/4_project/";
-                },},{id: "projects-project-5",
-              title: 'project 5',
-              description: "a project with a background image",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/5_project/";
-                },},{id: "projects-project-6",
-              title: 'project 6',
-              description: "a project with no image",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/6_project/";
-                },},{id: "projects-project-7",
-              title: 'project 7',
-              description: "with background image",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/7_project/";
-                },},{id: "projects-project-8",
-              title: 'project 8',
-              description: "an other project with a background image and giscus comments",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/8_project/";
-                },},{id: "projects-project-9",
-              title: 'project 9',
-              description: "another project with an image 🎉",
-              section: "Projects",handler: () => {
-                  window.location.href = "/projects/9_project/";
+                  window.location.href = "/projects/2_mcs/";
                 },},{
             id: 'socials-email',
             title: 'Send email',
@@ -677,8 +665,19 @@
           },
         },];
   </script>
+  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
 
 
-    <script src="/assets/js/shortcut-key.js"></script>
+
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+    sc_project=847044;
+    sc_invisible=0;
+    sc_partition=6;
+    sc_security="13a8630d";
+    sc_text=2;
+    </script>
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a href="http://www.statcounter.com/free_hit_counter.html" target="_blank" rel="external nofollow noopener"><img class="statcounter" src="http://c7.statcounter.com/847044/0/13a8630d/0/" alt="site hit counter"></a></div></noscript>
+    <!-- End of StatCounter Code -->
   </body>
 </html>

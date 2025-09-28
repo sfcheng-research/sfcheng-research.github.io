@@ -52,7 +52,7 @@
       "url": "https://www.amazon.science/",
       "startDate": "2024-07-01",
       "endDate": "",
-      "summary": "Working on optimizing delivery experience and logistics operations."
+      "summary": "Working on optimizing inventory placement, supplier efficiency, and peak event readiness for Amazon Japan."
     },
     {
       "name": "School of Computing and Information Systems<br>Singapore Management University",
@@ -381,6 +381,7 @@
       "name": "Qian Shao",
       "thesisTitle": "Real-world Considerations in Human Decision Making",
       "startDate": "2020-08-01",
+      "endDate": "2025-07-31",
       "note": "Awarded SMU Presidential Doctoral Fellowship, 2023, 2024",
       "url": "https://www.linkedin.com/in/qian-shao-9422b7265/"
     },
@@ -492,15 +493,9 @@
   ],
   "Professional_Activities": [
     {
-      "type": "SPC",
-      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
-      "year": "2023, 2024, 2025"
-    },
-    {
-      "type": "SPC",
-      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
-      "url": "https://www.ifaamas.org/",
-      "year": "2018, 2019, 2023, 2024, 2025"
+      "type": "AC",
+      "name": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "year": "2026"
     },
     {
       "type": "SPC",
@@ -514,8 +509,25 @@
     },
     {
       "type": "SPC",
+      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
+      "year": "2023 -- 2025"
+    },
+    {
+      "type": "SPC",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+      "url": "https://www.ifaamas.org/",
+      "year": "2018, 2019, 2023 -- 2025"
+    },
+    {
+      "type": "SPC",
       "name": "AAAI Conference on Human Computation and Crowdsourcing (HCOMP)",
       "year": "2022"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+      "url": "https://www.ifaamas.org/",
+      "year": "2011, 2013 - 2017, 2026"
     },
     {
       "type": "PC",
@@ -541,12 +553,6 @@
       "type": "PC",
       "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
       "year": "2013, 2016, 2017, 2020"
-    },
-    {
-      "type": "PC",
-      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
-      "url": "https://www.ifaamas.org/",
-      "year": "2011, 2013 - 2017"
     },
     {
       "type": "PC",

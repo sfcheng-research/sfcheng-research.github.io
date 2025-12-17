@@ -365,12 +365,6 @@
   ],
   "Thesis_Chair_(PhD)": [
     {
-      "name": "Jian Bin Liew",
-      "thesisTitle": "TBD",
-      "startDate": "2024-01-01",
-      "url": "https://www.linkedin.com/in/jianbinliew/"
-    },
-    {
       "name": "Pang Jin Tan",
       "thesisTitle": "Collaborative logistics: Theory and Practice of Platform and Incentive Design",
       "startDate": "2021-08-01",
@@ -383,7 +377,8 @@
       "startDate": "2020-08-01",
       "endDate": "2025-07-31",
       "note": "Awarded SMU Presidential Doctoral Fellowship, 2023, 2024",
-      "url": "https://www.linkedin.com/in/qian-shao-9422b7265/"
+      "position": "Research Associate, Singapore Management University",
+      "url": "https://shaoqian12.github.io/"
     },
     {
       "name": "Mengyu Ji",
@@ -430,6 +425,14 @@
     }
   ],
   "Thesis_Chair_(EngD)": [
+    {
+      "name": "Joo Ern Chin",
+      "thesisTitle": "TBD",
+      "startDate": "2025-08-01",
+      "url": "https://www.linkedin.com/in/joo-ern-chin-2a2760ab/",
+      "cosupervisor": "<a href='http://www.mysmu.edu/faculty/aldygunawan/'>Aldy Gunawan</a>",
+      "position": "Lead, Analytics & Artificial Intelligence, ST Logistics"
+    },
     {
       "name": "Nurul Asyikeen Azhar",
       "thesisTitle": "Enabling Sustainable Mining via AI-based Approaches",

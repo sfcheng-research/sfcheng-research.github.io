@@ -3,10 +3,10 @@
     "name": "Shih-Fen Cheng",
     "label": "Professor / Scientist",
     "image": "",
-    "email": "chengsf@umich.edu",
+    "email": "sfcheng@smu.edu.sg",
     "phone": "+65 6828-0526",
     "url": "https://sfcheng-research.github.io/",
-    "summary": "Principal Research Scientist at Amazon; Associate Professor of Computer Science at Singapore Management University",
+    "summary": "Associate Professor of Computer Science at Singapore Management University",
     "location": {
       "address": "80 Stamford Road",
       "postalCode": "178902",
@@ -46,15 +46,6 @@
   ],  
   "Work": [
     {
-      "name": "Amazon",
-      "location": "Singapore / Japan",
-      "position": "Principal Research Scientist",
-      "url": "https://www.amazon.science/",
-      "startDate": "2024-07-01",
-      "endDate": "",
-      "summary": "Working on optimizing inventory placement, supplier efficiency, and peak event readiness for Amazon Japan."
-    },
-    {
       "name": "School of Computing and Information Systems<br>Singapore Management University",
       "location": "Singapore",
       "position": "Associate Professor of Computer Science",
@@ -71,6 +62,15 @@
       "startDate": "2023-08-01",
       "endDate": "",
       "summary": ""
+    },
+    {
+      "name": "Amazon",
+      "location": "Singapore / Japan",
+      "position": "Principal Research Scientist",
+      "url": "https://www.amazon.science/",
+      "startDate": "2024-07-01",
+      "endDate": "2025-12-31",
+      "summary": "Working on optimizing inventory placement, supplier efficiency, and peak event readiness for Amazon Japan."
     },
     {
       "name": "Fujitsu-SMU Urban Computing and Engineering Corp Lab<br>Singapore Management University",
@@ -199,7 +199,7 @@
       "title": "Enabling Sustainable Point-to-Point Transport Service via Behavioral Game Theory",
       "awarder": "Urban Institute, Singapore Management University",
       "startDate": "2024-01-01",
-      "endDate": "2025-12-31",
+      "endDate": "2026-06-30",
       "amount": "S$124,990"
     },
     {
@@ -466,6 +466,18 @@
   ],
   "Thesis_Committee_(PhD)": [
     {
+      "name": "Huy Hung Tran",
+      "supervisor": "<a href='https://sites.google.com/view/tien-mai/home'>Anh Tien Mai</a>"
+    },
+    {
+      "name": "Hao Jiang",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
+    },
+    {
+      "name": "Changyu Chen",
+      "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
+    },
+    {
       "name": "Dexun Li",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
     },
@@ -496,6 +508,11 @@
   ],
   "Professional_Activities": [
     {
+      "type": "SPC",
+      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
+      "year": "2023 -- 2026"
+    },
+    {
       "type": "AC",
       "name": "AAAI Conference on Artificial Intelligence (AAAI)",
       "year": "2026"
@@ -509,11 +526,6 @@
       "type": "SPC",
       "name": "AAAI Conference on Artificial Intelligence (AAAI), Special Track on AI for Social Impact",
       "year": "2024, 2025"
-    },
-    {
-      "type": "SPC",
-      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
-      "year": "2023 -- 2025"
     },
     {
       "type": "SPC",

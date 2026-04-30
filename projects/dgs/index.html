@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Driver Guidance System (DGS) for Taxi Drivers | Shih-Fen Cheng
+    
+  
+</title>
+<meta name="author" content="Shih-Fen Cheng">
+<meta name="description" content="DGS enables taxi drivers to be more productive by digesting real-time demands and competitions.">
+
+  <meta name="keywords" content="Amazon, Scientist, SMU, Professor, AI, Computer Science, Shih-Fen, 鄭世昐">
+
+
+
+
+
+
+
+
+
+
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;">
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="http://0.0.0.0:8080/projects/dgs/">
+
+
+  <!-- Dark Mode -->
+  <script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script>
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
+    initTheme();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            Shih-Fen
+            
+            
+              <span class="font-weight-bold">Cheng</span>
+            
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/cv/">CV
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/publications/">Publications
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/research/">Research
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/teaching/">Teaching
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/people/">People
+                    
+                  </a>
+                </li>
+              
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </li>
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Driver Guidance System (DGS) for Taxi Drivers</h1>
+    <p class="post-description">DGS enables taxi drivers to be more productive by digesting real-time demands and competitions.</p>
+  </header>
+
+  <article>
+    <div class="row">
+    <div class="col-sm-10 mt-3 mt-md-0 mx-auto">
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container">    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/NEoG5oYRB_k" frameborder="0" allowfullscreen=""></iframe>
+</div>
+    </div>
+</div>
+<p><br></p>
+
+<!------------------------------------------->
+<h2 id="background">Background</h2>
+
+<p>Uber and Uber-like services have been rocking the taxi industry globally for the past few years. Traditional taxi companies have been slow in responding to these challenges. The development of the DGS technology <a class="citation" href="#jha_iaai_2018">(Jha et al., 2018; Jha et al., 2018)</a> aims to help taxi drivers to compete against ride-hailing technologies by providing guidance to an area with predicted demand (i.e., actionable driving decision) that would help drivers shorten their vacant cruising time before finding the next passenger.</p>
+
+<p>The key enabling technology behind the development of the DGS is the stream data processing, demand prediction <a class="citation" href="#DGS2025">(Cheng &amp; Rathnayaka, 2025; Cheng &amp; Rathnayaka, 2023)</a>, and personalized decision support system <a class="citation" href="#varakantham_aaai_2012">(Varakantham et al., 2012; Ahmed et al., 2012)</a>.</p>
+<div class="row"><div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/dgs_arch-480.webp 480w,/assets/img/dgs/dgs_arch-800.webp 800w,/assets/img/dgs/dgs_arch-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/dgs_arch.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 1: The Architecture of DGS." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+</div></div>
+<div class="caption">
+    <b>Figure 1: The Architecture of DGS.</b>
+</div>
+
+<h2 id="the-dgs-app">The DGS App</h2>
+<p>The technology is delivered via a smartphone App. The DGS App is designed to be hands-free; as drivers drive around, the App will automatically provide the best recommendations for individual drivers depending on their respective locations.</p>
+<div class="row"><div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/dgs_app-480.webp 480w,/assets/img/dgs/dgs_app-800.webp 800w,/assets/img/dgs/dgs_app-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/dgs_app.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 2: The DGS App." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+    
+</div></div>
+<div class="caption">
+    <b>Figure 2: The DGS App.</b>
+</div>
+
+<!------------------------------------------->
+<h2 id="simulated-performance-evaluation">Simulated Performance Evaluation</h2>
+<p>The expected performance of DGS App is evaluated a massive scale <a href="https://ink.library.smu.edu.sg/sis_research/1405/" rel="external nofollow noopener" target="_blank">agent-based simulation</a> <a class="citation" href="#cheng_iat_2011">(Cheng &amp; Nguyen, 2011)</a>. As shown in Figure 3 below, the personalized guidance ensures that DGS stays competitive even when the adoption ratio increases.</p>
+<div class="row"><div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/dgs_perf_sim-480.webp 480w,/assets/img/dgs/dgs_perf_sim-800.webp 800w,/assets/img/dgs/dgs_perf_sim-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/dgs_perf_sim.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 3: DGS performance (average trips) in response to adoption ratio." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+    
+</div></div>
+<div class="caption">
+    <b>Figure 3: DGS performance (average trips) in response to adoption ratio.</b>
+</div>
+
+<!------------------------------------------->
+<h2 id="field-trial-results">Field Trial Results</h2>
+<p>The DGS is field tested in Singapore from 2017 to 2018. In total we have recruited 500 taxi drivers to try DGS. On average, following DGS guidance results in <b>34%</b> reduction in vacant roaming time <a class="citation" href="#cheng_aamas_2018">(Cheng et al., 2018)</a>.</p>
+
+<p>The reduction in the vacant roaming time is particularly evident when the demand levels are low (e.g., from 11pm to 5am in Figure 4). We also track the performance of DGS across Singapore, and the improvements are universal (Figure 5).</p>
+<div class="row"><div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/dgs_perf-480.webp 480w,/assets/img/dgs/dgs_perf-800.webp 800w,/assets/img/dgs/dgs_perf-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/dgs_perf.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 4: The performance (average vacant roaming time) of DGS vs. non-DGS." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+    
+</div></div>
+<div class="caption">
+    <b>Figure 4: The performance (average vacant roaming time) of DGS vs. non-DGS trips at different hours of the day. The bars at the bottom correspond to the demand level. The value of guidance is particularly evident when the demands are low.</b>
+</div>
+
+<div class="row"><div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/dgs_perf_map-480.webp 480w,/assets/img/dgs/dgs_perf_map-800.webp 800w,/assets/img/dgs/dgs_perf_map-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/dgs_perf_map.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 5: The performance (average vacant roaming time) of DGS vs. non-DGS trips at different regions across Singapore." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+    
+</div></div>
+<div class="caption">
+    <b>Figure 5: The performance (average vacant roaming time) of DGS vs. non-DGS trips at different regions across Singapore.</b>
+</div>
+
+<p>Finally, we also breakdown the performance of DGS by demand channels such as “street hail” or “booking”. We can see that while the booking channel indeed helps drivers in reducing their vacant roaming time (from ~13min to 9min), having personalized guidance still helps in further bringing down the vacant roaming time by ~24%.</p>
+
+<p>Furthermore, after accounting for the “response time” (i.e., the time between driver’s commitment to the job and the passenger pick-up), we can see that the street-hail channel with DGS can be even more efficient than the booking channel (35% vacant vs. 43% vacant).</p>
+<div class="row"><div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/dgs_perf_table-480.webp 480w,/assets/img/dgs/dgs_perf_table-800.webp 800w,/assets/img/dgs/dgs_perf_table-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/dgs_perf_table.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 6: The performance (average vacant roaming time) of DGS vs. non-DGS trips at different regions across Singapore." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+    
+</div></div>
+<div class="caption">
+    <b>Figure 6: The performance (average vacant roaming time) of DGS vs. non-DGS trips at different regions across Singapore.</b>
+</div>
+
+<h3 id="field-trials-in-japan">Field Trials in Japan</h3>
+
+<p>The DGS was also commercially tested in Tokyo, Japan in April 2020. With 29 dedicated taxi drivers hired by a major operator in the Tokyo region, we demonstrated that DGS-guided drivers experienced 12% less vacant time than ordinary drivers, despite the tests being conducted during the COVID lockdown period in Tokyo. The follow-up financial analysis showed that 10% decrease in vacancy leads to around 600 yen increase in average income per hour.</p>
+
+<h2 id="other-natural-experiments-on-information-and-guidance">Other (Natural) Experiments on Information and Guidance</h2>
+
+<div class="row">
+    <div class="col-sm-5 mt-3 mt-md-0">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/dgs/taxi_signboard-480.webp 480w,/assets/img/dgs/taxi_signboard-800.webp 800w,/assets/img/dgs/taxi_signboard-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/dgs/taxi_signboard.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="Figure 7: Digital information on taxi queues and flight arrival at the Changi Airport." loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+        <div class="caption">
+            <b>Figure 7: Digital information board showing taxi queue lengths and flight arrivals at the Changi Airport.</b>
+        </div>
+    </div>
+    <div class="col-sm-7 mt-3 mt-md-0">
+        <p>It is frequently speculated, both in academic literature and in practice, that sharing real-time information with drivers helps reduce search frictions and improve travelers' experience. However, empirically establishing the causal effect of information provision on search frictions has remained challenging.</p>
+
+        <p>In our paper <a class="citation" href="#RESTAT_2025">(Agarwal et al., 2025)</a>, published in <i>The Review of Economics and Statistics</i>, we establish and quantify this causal effect using a natural experiment at Singapore's Changi Airport, where multiple digital information boards (see Figure 7) were installed in 2009 to provide real-time taxi queue lengths and flight arrival times (an App was later developed to deliver the same information).</p>
+
+        <p>Our findings show that information provision reduces drivers' waiting time by 10.77% and increases daily earnings by USD $3.70 for airport-serving taxis. Notably, drivers with fewer prior airport pickups benefit more substantially from this information.</p>
+
+        <p>This large-scale natural experiment is yet another example that demonstrates the value of information and guidance in improving driver productivity in urban environments.</p>
+    </div>
+</div>
+
+<p><br><br><br></p>
+
+  </article>
+
+  
+    <h2>References</h2>
+    <div class="publications">
+      <h2 class="bibliography">2025</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">Patent</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="DGS2025" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Method and System for Taxi Demand Prediction Using a Neural Network Model</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Shih-Fen
+            Cheng</em>, and Prabod
+            Rathnayaka
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Singapore Patent 10202103115Q</em>,  Mar 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+      
+      
+      
+        
+          <a href="https://patents.google.com/patent/WO2022203597A1/en" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100" style="background-color:#009f36">
+            
+              <a href="https://direct.mit.edu/rest" rel="external nofollow noopener" target="_blank">RESTAT</a>
+            
+          </abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="RESTAT_2025" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Information Provision and Search Frictions: Evidence from the Taxi Industry in Singapore</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://www.ushakrisna.com/" rel="external nofollow noopener" target="_blank">Sumit
+              Agarwal</a>, <em>Shih-Fen
+            Cheng</em>, <a href="https://www.jussikeppo.com/" rel="external nofollow noopener" target="_blank">Jussi
+              Keppo</a>, Long
+            Wang, and Yang
+            Yang
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>The Review of Economics and Statistics</em>,  Mar 2025
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+        
+          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4234268" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Search frictions and misallocation are common in decentralized transportation markets. Using novel trip-level data of taxis in Singapore, this paper examines the impact of real-time demand information at airport terminals on search frictions. The information reduces taxi supply misallocation, increasing deadheading speed by 16.3% and decreasing deadheading time by 10.77%, benefiting both passengers and drivers. It raises daily earnings by $3.70 USD and adds 6.2 minutes of operational time per airport-trip taxi. Spatial spillovers are primarily observed among drivers in adjacent districts. Taxis from the Budget Terminal and drivers with fewer prior airport pickups benefit more from this information.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">RESTAT_2025</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Information Provision and Search Frictions: Evidence from the Taxi Industry in Singapore}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{to appear}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{The Review of Economics and Statistics}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Agarwal, Sumit and Cheng, Shih-Fen and Keppo, Jussi and Wang, Long and Yang, Yang}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+<h2 class="bibliography">2023</h2>
+<ol class="bibliography"><li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">IEEE BigData-23</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="cheng_bigdata_2023" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">M^2-CNN: A macro-micro model for taxi demand prediction</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Shih-Fen
+            Cheng</em>, and Prabod
+            Rathnayaka
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In 2023 IEEE International Conference on Big Data</em>,  Dec 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/8543/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>In this paper, we introduce a macro-micro model for predicting taxi demands. Our model is a composite deep learning model that integrates multiple views. Our network design specifically incorporates the spatial and temporal dependency of taxi or ride-hailing demand, unlike previous papers that also utilize deep learning models. In addition, we propose a hybrid of Long Short-Term Memory Networks and Temporal Convolutional Networks that incorporates real world time series with long sequences. Finally, we introduce a microscopic component that attempts to extract insights revealed by roaming vacant taxis. In our study, we demonstrate that our approach is competitive against a large array of approaches from the literature on the basis of detailed moving logs of more than 20,000 taxis and 12 million trips per month over a three-month period. Our analysis of the effectiveness of individual components reveals that microscopic information is essential for generating high-quality predictions.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cheng_bigdata_2023</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{M$^{2}$-CNN: A macro-micro model for taxi demand prediction}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2023 IEEE International Conference on Big Data}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Sorrento, Italy}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Cheng, Shih-Fen and Rathnayaka, Prabod}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{8543}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+<h2 class="bibliography">2018</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">IAAI-18</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="jha_iaai_2018" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Upping the game of taxi driving in the age of Uber</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Shashi Shekhar
+            Jha, <em>Shih-Fen
+            Cheng</em>, Meghna
+            Lowalekar, Nicholas
+            Wong, Rishikeshan
+            Rajendram, Tran Trong
+            Khiem, <a href="http://www.mysmu.edu/faculty/pradeepv/" rel="external nofollow noopener" target="_blank">Pradeep
+              Varakantham</a>, Truong Trong
+            Nghia, and Firmansyah
+            Rahman
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Thirtieth Annual Conference on Innovative Applications of Artificial Intelligence</em>,  Feb 2018
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/3952/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>In most cities, taxis play an important role in providing point-to-point transportation service. If the taxi service is reliable, responsive, and cost-effective, past studies show that taxi-like services can be a viable choice in replacing a significant amount of private cars. However, making taxi services efficient is extremely challenging, mainly due to the fact that taxi drivers are self-interested and they operate with only local information. Although past research has demonstrated how recommendation systems could potentially help taxi drivers in improving their performance, most of these efforts are not feasible in practice. This is mostly due to the lack of both the comprehensive data coverage and an efficient recommendation engine that can scale to tens of thousands of drivers. In this paper, we propose a comprehensive working platform called the Driver Guidance System (DGS). With real-time citywide taxi data provided by our collaborator in Singapore, we demonstrate how we can combine real-time data analytics and large-scale optimization to create a guidance system that can potentially benefit tens of thousands of taxi drivers. Via a realistic agent-based simulation, we demonstrate that drivers following DGS can significantly improve their performance over ordinary drivers, regardless of the adoption ratios. We have concluded our system designing and building and have recently entered the field trial phase.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">jha_iaai_2018</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Upping the game of taxi driving in the age of Uber}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Thirtieth Annual Conference on Innovative Applications of Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{New Orleans, Louisiana, USA}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jha, Shashi Shekhar and Cheng, Shih-Fen and Lowalekar, Meghna and Wong, Nicholas and Rajendram, Rishikeshan and Khiem, Tran Trong and Varakantham, Pradeep and Nghia, Truong Trong and Rahman, Firmansyah}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2018}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">feb</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{3952}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">AAMAS-18</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="jha_aamas_2018" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">A driver guidance system for taxis in Singapore</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Shashi Shekhar
+            Jha, <em>Shih-Fen
+            Cheng</em>, Rishikeshan
+            Rajendram, Nicholas
+            Wong, Firmansyah Bin Abd
+            Rahman, Nghia Truong
+            Trong, Meghna
+            Lowalekar, and 
+            Pradeep Varakantham
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Seventeenth International Conference on Autonomous Agents and Multiagent Systems</em>,  May 2018
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+        <a class="award btn btn-sm z-depth-0" role="button">Best Application Demo Award</a>
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/4118/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+      <!-- Hidden Award block -->
+      <div class="award hidden d-print-inline">
+        <p></p>
+<p>Awarded Best Application Demo Award</p>
+
+      </div>
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Traditional taxi fleet operators world-over have been facing intense competitions from various ride-hailing services such as Uber and Grab.Based on our studies on the taxi industry in Singapore, we see that the emergence of Uber and Grab in the ride-hailing market has greatly impacted the taxi industry: the average daily taxi ridership for the past two years has been falling continuously, by close to 20% in total. In this work, we discuss how efficient real-time data analytics and large-scale multiagent optimization technology could help taxi drivers compete against more technologically advanced service platforms. Our system has been in field trial with close to 400 drivers, and our initial results show that by following our recommendations, drivers on average save 21.5% on roaming time.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">jha_aamas_2018</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jha, Shashi Shekhar and Cheng, Shih-Fen and Rajendram, Rishikeshan and Wong, Nicholas and Rahman, Firmansyah Bin Abd and Trong, Nghia Truong and Lowalekar, Meghna and and Pradeep Varakantham}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A driver guidance system for taxis in Singapore}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Seventeenth International Conference on Autonomous Agents and Multiagent Systems}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Stockholm, Sweden}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2018}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">may</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{4118}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">AAMAS-18</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="cheng_aamas_2018" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Taxis strike back: A field trial of the driver guidance system</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Shih-Fen
+            Cheng</em>, Shashi Shekhar
+            Jha, and Rishikeshan
+            Rajendram
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Seventeenth International Conference on Autonomous Agents and Multiagent Systems</em>,  May 2018
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/4117/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Traditional taxi fleet operators world-over have been facing intense competitions from various ride-hailing services such as Uber and Grab (specific to the Southeast Asia region). Based on our studies on the taxi industry in Singapore, we see that the emergence of Uber and Grab in the ride-hailing market has greatly impacted the taxi industry: the average daily taxi ridership for the past two years has been falling continuously, by close to 20% in total. In this work, we discuss how efficient real-time data analytics and large-scale multi-agent optimization technology could potentially help taxi drivers compete against more technologically advanced service platforms.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cheng_aamas_2018</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Taxis strike back: A field trial of the driver guidance system}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Seventeenth International Conference on Autonomous Agents and Multiagent Systems}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Stockholm, Sweden}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Cheng, Shih-Fen and Jha, Shashi Shekhar and Rajendram, Rishikeshan}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2018}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">may</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{4117}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+<h2 class="bibliography">2012</h2>
+<ol class="bibliography">
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">AAAI-12</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="varakantham_aaai_2012" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Decision support for agent populations in uncertain and congested environments</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="http://www.mysmu.edu/faculty/pradeepv/" rel="external nofollow noopener" target="_blank">Pradeep
+              Varakantham</a>, <em>Shih-Fen
+            Cheng</em>, Geoff
+            Gordon, and Asrar
+            Ahmed
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Twenty-Sixth AAAI Conference on Artificial Intelligence</em>,  Feb 2012
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/1567/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>This research is motivated by large scale problems in urban transportation and labor mobility where there is congestion for resources and uncertainty in movement. In such domains, even though the individual agents do not have an identity of their own and do not explicitly interact with other agents, they effect other agents. While there has been much research in handling such implicit effects, it has primarily assumed deterministic movements of agents. We address the issue of decision support for individual agents that are identical and have involuntary movements in dynamic environments. For instance, in a taxi fleet serving a city, when a taxi is hired by a customer, its movements are uncontrolled and depend on (a) the customers requirement; and (b) the location of other taxis in the fleet. Towards addressing decision support in such problems, we make two key contributions: (a) A framework to represent the decision problem for selfish individuals in a dynamic population, where there is transitional uncertainty (involuntary movements); and (b) Two techniques (Fictitious Play for Symmetric Agent Populations, FP-SAP and Softmax based Flow Update, SMFU) that converge to equilibrium solutions.We show that our techniques (apart from providing equilibrium strategies) outperform "driver" strategies with respect to overall availability of taxis and the revenue obtained by the taxi drivers. We demonstrate this on a real world data set with 8,000 taxis and 83 zones (representing the entire area of Singapore).</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">varakantham_aaai_2012</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Varakantham, Pradeep and Cheng, Shih-Fen and Gordon, Geoff and Ahmed, Asrar}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Decision support for agent populations in uncertain and congested environments}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Twenty-Sixth AAAI Conference on Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Toronto, Canada}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">feb</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{1567}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">UAI-12</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="ahmed_uai_2012" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">Uncertain congestion games with assorted human agent populations</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Asrar
+            Ahmed, <a href="http://www.mysmu.edu/faculty/pradeepv/" rel="external nofollow noopener" target="_blank">Pradeep
+              Varakantham</a>, and <em>Shih-Fen
+            Cheng</em>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In Twenty-Eighth Conference on Uncertainty in Artificial Intelligence</em>,  Aug 2012
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/1568/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Congestion games model a wide variety of real-world resource congestion problems, such as selfish network routing, traffic route guidance in congested areas, taxi fleet optimization and crowd movement in busy areas. However, existing research in congestion games assumes: (a) deterministic movement of agents between resources; and (b) perfect rationality (i.e. maximizing their own expected value) of all agents. Such assumptions are not reasonable in dynamic domains where decision support has to be provided to humans. For instance, in optimizing the performance of a taxi fleet serving a city, movement of taxis can be involuntary or nondeterministic (decided by the specific customer who hires the taxi) and more importantly, taxi drivers may not follow advice provided by the decision support system (due to bounded rationality of humans). To that end, we contribute: (a) a general framework for representing congestion games under uncertainty for populations with assorted notions of rationality. (b) a scalable approach for solving the decision problem for perfectly rational agents which are in the mix with boundedly rational agents; and (c) a detailed evaluation on a synthetic and real world data set to illustrate the usefulness of our new approach with respect to key social welfare metrics in the context of an assorted human-agent population. An interesting result from our experiments on a real-world taxi fleet optimization problem is that it is better (in terms of revenue and operational efficiency) for taxi drivers to follow perfectly rational strategies irrespective of the percentage of drivers not following the advice.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">ahmed_uai_2012</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Ahmed, Asrar and Varakantham, Pradeep and Cheng, Shih-Fen}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Uncertain congestion games with assorted human agent populations}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Twenty-Eighth Conference on Uncertainty in Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{California, USA}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">aug</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{1568}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li>
+</ol>
+<h2 class="bibliography">2011</h2>
+<ol class="bibliography"><li>
+<div class="row">
+  
+    <div class="col col-sm-2 abbr">
+          <abbr class="badge rounded w-100">IAT-11</abbr>
+        
+      
+      
+    </div>
+  
+
+  <!-- Entry bib key -->
+  <div id="cheng_iat_2011" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">TaxiSim: A multiagent simulation platform for evaluating taxi fleet operations</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <em>Shih-Fen
+            Cheng</em>, and Thi Duong
+            Nguyen
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>In 2011 IEEE/WIC/ACM International Conference on Intelligent Agent Technology</em>,  Aug 2011
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+        <a href="https://ink.library.smu.edu.sg/sis_research/1405/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">SMU PDF</a>
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+
+      
+      
+
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Taxi service is an important mode of public transportation in most metropolitan areas since it provides door-to-door convenience in the public domain. Unfortunately, despite all the convenience taxis bring, taxi ﬂeets are also extremely inefficient to the point that over 50% of its operation time could be spent in idling state. Improving taxi ﬂeet operation is an extremely challenging problem, not just because of its scale, but also due to fact that taxi drivers are self-interested agents that cannot be controlled centrally. To facilitate the study of such complex and decentralized system, we propose to construct a multiagent simulation platform that would allow researchers to investigate interactions among taxis and to evaluate the impact of implementing certain management policies. The major contribution of our work is the incorporation of our analysis on the real-world driver’s behaviors. Despite the fact that taxi drivers are selﬁsh and unpredictable, by analyzing a huge GPS dataset collected from a major taxi ﬂeet operator, we are able to clearly demonstrate that driver’s movements are closely related to the relative attractiveness of neighboring regions. By applying this insight, we are able to design a background agent movement strategy that generates aggregate performance patterns that are very similar to the real-world ones. Finally, we demonstrate the value of such system with a real-world case study.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cheng_iat_2011</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Cheng, Shih-Fen and Nguyen, Thi Duong}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{TaxiSim: A multiagent simulation platform for evaluating taxi fleet operations}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{2011 IEEE/WIC/ACM International Conference on Intelligent Agent Technology}</span><span class="p">,</span>
+  <span class="na">address</span> <span class="p">=</span> <span class="s">{Lyon, France}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2011}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">aug</span><span class="p">,</span>
+  <span class="na">smu</span> <span class="p">=</span> <span class="s">{1405}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+    </div>
+  
+
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+
+
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      
+  © Copyright 2026
+  Shih-Fen
+  
+  Cheng. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+
+  
+  
+    Last updated: April 30, 2026.
+  
+
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script>
+<script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+  <!-- MathJax -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+  
+    <script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+  <!-- Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQ5VXZ2ERF"></script>
+  <script defer src="/assets/js/google-analytics-setup.js"></script>
+
+
+
+
+
+
+
+  <!-- Scrolling Progress Bar -->
+  <script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  <script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
+    addBackToTop();
+  </script>
+
+
+
+  <!-- Search -->
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?v=a3446f084dcaecc5f75aa1757d087dcf"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script src="/assets/js/search-setup.js?v=6c304f7b1992d4b60f7a07956e52f04a"></script>
+  <script src="/assets/js/search-data.js"></script>
+  <script src="/assets/js/shortcut-key.js?v=ccc841c459bfc0e64c1c2b5acd10df02"></script>
+
+
+
+
+
+    <!-- Default Statcounter code for Shih-Fen Cheng's Homepage
+    https://sfcheng-research.github.io/ -->
+    <script type="text/javascript">
+    var sc_project=847044; 
+    var sc_invisible=1; 
+    var sc_security="13a8630d"; 
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics
+    Made Easy - Statcounter" href="https://statcounter.com/" target="_blank" rel="external nofollow noopener"><img class="statcounter" src="https://c.statcounter.com/847044/0/13a8630d/1/" alt="" referrerpolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->    
+  </body>
+</html>

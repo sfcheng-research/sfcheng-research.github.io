@@ -540,6 +540,11 @@
     },
     {
       "type": "PC",
+      "name": "ACM Conference on Human-AI Complementarity and Alignment (HCOMP)",
+      "year": "2026"
+    },
+    {
+      "type": "PC",
       "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
       "url": "https://www.ifaamas.org/",
       "year": "2011, 2013 - 2017, 2026"

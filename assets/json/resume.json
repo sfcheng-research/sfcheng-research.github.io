@@ -464,45 +464,57 @@
       "position": "Manager, Infocomm Development Authority of Singapore"
     }
   ],
-  "Thesis_Committee_(PhD)": [
+  "Thesis_Committee_(Doctoral)": [
     {
-      "name": "Huy Hung Tran",
+      "name": "Hongjun Zhang, CKGSB-SMU DBA",
+      "supervisor": "<a href='https://profhannahchang.github.io/'>Hannah H. Chang</a>"
+    },
+    {
+      "name": "Huy Hung Tran, PhD in CS, SMU",
       "supervisor": "<a href='https://sites.google.com/view/tien-mai/home'>Anh Tien Mai</a>"
     },
     {
-      "name": "Hao Jiang",
+      "name": "Hao Jiang, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
     },
     {
-      "name": "Changyu Chen",
+      "name": "Changyu Chen, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
     },
     {
-      "name": "Dexun Li",
+      "name": "Dexun Li, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
     },
     {
-      "name": "Jingfeng Yang",
+      "name": "Jingfeng Yang, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
     },
     {
-      "name": "Joe Waldy",
+      "name": "Joe Waldy, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
     },
     {
-      "name": "Rajiv Kumar",
+      "name": "Rajiv Kumar, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
     },
     {
-      "name": "Meghna Lowalekar",
+      "name": "Kok Yew Tan, PhD in Business, SMU",
+      "supervisor": "<a href='https://profhannahchang.github.io/'>Hannah H. Chang</a>"
+    },
+    {
+      "name": "Lai Hing Tan, PhD in Business, SMU",
+      "supervisor": "<a href='https://business.smu.edu.sg/faculty/profile/2106/geng-xuesong'>Xuesong Geng</a>"
+    },
+    {
+      "name": "Meghna Lowalekar, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a>"
     },
     {
-      "name": "Tanvi Verma",
+      "name": "Tanvi Verma, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/pradeepv/'>Pradeep Varakantham</a> and <a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
     },
     {
-      "name": "Na Fu",
+      "name": "Na Fu, PhD in CS, SMU",
       "supervisor": "<a href='http://www.mysmu.edu/faculty/hclau/'>Hoong Chuin Lau</a>"
     }
   ],
@@ -510,7 +522,7 @@
     {
       "type": "SPC",
       "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
-      "year": "2023 -- 2026"
+      "year": "2023 - 2026"
     },
     {
       "type": "AC",
@@ -531,7 +543,7 @@
       "type": "SPC",
       "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
       "url": "https://www.ifaamas.org/",
-      "year": "2018, 2019, 2023 -- 2025"
+      "year": "2018, 2019, 2023 - 2025 (Distinguished SPC in 2025)"
     },
     {
       "type": "SPC",

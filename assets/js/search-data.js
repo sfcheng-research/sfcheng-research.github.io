@@ -103,7 +103,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/n_9/";
-            },},{id: "news-paper-accepted-at-european-journal-of-operational-research",
+            },},{id: "news-recognized-as-a-distinguished-spc-member-at-aamas-2025",
+          title: 'Recognized as a distinguished SPC member at AAMAS 2025.',
+          description: "",
+          section: "News",},{id: "news-paper-accepted-at-european-journal-of-operational-research",
           title: 'Paper accepted at European Journal of Operational Research',
           description: "",
           section: "News",handler: () => {

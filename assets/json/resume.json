@@ -127,6 +127,11 @@
   ],
   "Awards_&_Honors": [
     {
+      "title": "Distinguished SPC",
+      "date": "2025",
+      "awarder": "AAMAS 2025"
+    },
+    {
       "title": "Best Student Paper Award",
       "url": "https://web.archive.org/web/20211020105331/https://www.icss2021.servicescienceglobal.org/competitions/",
       "date": "2021",
@@ -343,23 +348,15 @@
       "icon": "fa-solid fa-caret-right"
     },
     {
-      "name": "Mobility-on-demand systems",
+      "name": "Supply chain and logistics optimization",
       "icon": "fa-solid fa-caret-right"
     },
     {
-      "name": "Mobile crowdsourcing",
+      "name": "Applied game theory (cooperative, non-cooperative, behavioral)",
       "icon": "fa-solid fa-caret-right"
     },
     {
-      "name": "Last-mile logistics",
-      "icon": "fa-solid fa-caret-right"
-    },
-    {
-      "name": "Agent-based modeling and simulation",
-      "icon": "fa-solid fa-caret-right"
-    },
-    {
-      "name": "Large-scale optimization models and computational methods",
+      "name": "Multiagent systems",
       "icon": "fa-solid fa-caret-right"
     }
   ],
@@ -520,24 +517,40 @@
   ],
   "Professional_Activities": [
     {
-      "type": "SPC",
-      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
-      "year": "2023 - 2026"
-    },
-    {
       "type": "AC",
       "name": "AAAI Conference on Artificial Intelligence (AAAI)",
-      "year": "2026"
-    },
-    {
-      "type": "SPC",
-      "name": "AAAI Conference on Artificial Intelligence (AAAI)",
-      "year": "2020, 2024, 2025"
+      "url": "https://aaai.org/conference/aaai/",
+      "year": "2026, 2027"
     },
     {
       "type": "SPC",
       "name": "AAAI Conference on Artificial Intelligence (AAAI), Special Track on AI for Social Impact",
-      "year": "2024, 2025"
+      "url": "https://aaai.org/conference/aaai/",
+      "year": "2024, 2025, 2027"
+    },
+    {
+      "type": "PC",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+      "url": "https://www.ifaamas.org/",
+      "year": "2011, 2013 - 2017, 2026"
+    },
+    {
+      "type": "PC",
+      "name": "IEEE International Conference on Data Mining (ICDM)",
+      "url": "https://icdm.zhonghuapu.com/",
+      "year": "2026"
+    },
+    {
+      "type": "SPC",
+      "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
+      "url": "https://ijcai.org/",
+      "year": "2023 - 2026"
+    },
+    {
+      "type": "SPC",
+      "name": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "url": "https://aaai.org/conference/aaai/",
+      "year": "2020, 2024, 2025"
     },
     {
       "type": "SPC",
@@ -552,28 +565,19 @@
     },
     {
       "type": "PC",
-      "name": "ACM Conference on Human-AI Complementarity and Alignment (HCOMP)",
-      "year": "2026"
-    },
-    {
-      "type": "PC",
-      "name": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
-      "url": "https://www.ifaamas.org/",
-      "year": "2011, 2013 - 2017, 2026"
-    },
-    {
-      "type": "PC",
       "name": "International Conference on Automated Planning and Scheduling (ICAPS)",
       "year": "2021 - 2024"
     },
     {
       "type": "PC",
       "name": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "url": "https://aaai.org/conference/aaai/",
       "year": "2011, 2012, 2016, 2017, 2019, 2021 - 2023"
     },
     {
       "type": "PC",
       "name": "AAAI Conference on Artificial Intelligence, Special Track on AI for Social Impact",
+      "url": "https://aaai.org/conference/aaai/",
       "year": "2020 - 2023"
     },
     {
@@ -584,6 +588,7 @@
     {
       "type": "PC",
       "name": "International Joint Conference on Artificial Intelligence (IJCAI)",
+      "url": "https://ijcai.org/",
       "year": "2013, 2016, 2017, 2020"
     },
     {

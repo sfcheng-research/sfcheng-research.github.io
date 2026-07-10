@@ -96,7 +96,7 @@ function initializeCookieConsent() {
               },
               {
                 title: 'More information',
-                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="http://0.0.0.0:8080/#contact">contact us</a>.'
+                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="https://sfcheng-research.github.io/#contact">contact us</a>.'
               }
             ]
           }

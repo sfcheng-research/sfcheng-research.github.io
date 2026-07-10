@@ -125,7 +125,12 @@ ninja.data = [{
             },},{id: "news-our-paper-constrained-pricing-in-logit-based-revenue-management-with-qian-shao-and-tien-mai-is-accepted-at-informs-journal-on-computing",
           title: 'Our paper, “Constrained Pricing in Logit-based Revenue Management,” (with Qian Shao and Tien...',
           description: "",
-          section: "News",},{id: "projects-driver-guidance-system-dgs-for-taxi-drivers",
+          section: "News",},{id: "news-recruiting-highly-motivated-phd-students",
+          title: 'Recruiting highly motivated PhD students',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/n_16/";
+            },},{id: "projects-driver-guidance-system-dgs-for-taxi-drivers",
           title: 'Driver Guidance System (DGS) for Taxi Drivers',
           description: "DGS enables taxi drivers to be more productive by digesting real-time demands and competitions.",
           section: "Projects",handler: () => {

@@ -130,6 +130,14 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/n_16/";
+            },},{id: "news-assuming-the-independent-director-position-at-cloudmile",
+          title: 'Assuming the Independent Director position at CloudMile',
+          description: "",
+          section: "News",},{id: "news-the-hidden-cost-of-perceived-gender-bias-in-stem-education",
+          title: 'The Hidden Cost of Perceived Gender Bias in STEM Education',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/n_18/";
             },},{id: "projects-driver-guidance-system-dgs-for-taxi-drivers",
           title: 'Driver Guidance System (DGS) for Taxi Drivers',
           description: "DGS enables taxi drivers to be more productive by digesting real-time demands and competitions.",

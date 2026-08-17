@@ -138,7 +138,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/n_18/";
-            },},{id: "projects-driver-guidance-system-dgs-for-taxi-drivers",
+            },},{id: "news-our-paper-accuracy-is-not-service-a-decision-aware-benchmark-for-intermittent-demand-forecasting-with-joo-ern-chin-and-aldy-gunawan-is-accepted-at-twenty-sixth-ieee-international-conference-on-data-mining-icdm-26",
+          title: 'Our paper, “Accuracy Is Not Service: A Decision-Aware Benchmark for Intermittent-Demand Forecasting,” (with...',
+          description: "",
+          section: "News",},{id: "projects-driver-guidance-system-dgs-for-taxi-drivers",
           title: 'Driver Guidance System (DGS) for Taxi Drivers',
           description: "DGS enables taxi drivers to be more productive by digesting real-time demands and competitions.",
           section: "Projects",handler: () => {

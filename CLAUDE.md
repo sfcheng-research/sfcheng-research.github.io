@@ -17,8 +17,8 @@ Note: `AGENTS.md` links to `.github/copilot-instructions.md`, `.github/agents/`,
 Dev server is normally run by the user via Docker (site at `http://localhost:8080`) — see above, don't run it yourself.
 
 ```bash
-# Format all content/templates (run before every commit)
-npx prettier . --write
+# Format ONLY the files you touched, before committing them
+npx prettier --write <paths you edited>
 
 # Native (non-Docker) build/serve, if ever needed and explicitly requested:
 bundle install
@@ -26,7 +26,9 @@ bundle exec jekyll serve      # http://localhost:4000
 bundle exec jekyll build
 ```
 
-There is no test suite or linter beyond Prettier (`.prettierrc`: `@shopify/prettier-plugin-liquid`, printWidth 150). `.pre-commit-config.yaml` only runs whitespace/EOF/YAML-syntax/large-file hooks.
+There is no test suite or linter beyond Prettier (`.prettierrc`: `@shopify/prettier-plugin-liquid`, printWidth 150). `.pre-commit-config.yaml` only runs whitespace/EOF/YAML-syntax/large-file hooks — nothing enforces Prettier, and no CI workflow checks it either.
+
+**Don't run `npx prettier . --write`.** Many hand-edited content files predate consistent formatting, so a blanket run reformats ~26 files unrelated to your change and buries the real diff. Format only what you edited. `_news/*.md` is prose, not code, and is excluded in `.prettierignore`; add other hand-written content there rather than formatting it.
 
 `bin/update_scholar_citations.py` regenerates `_data/citations.yml` from Google Scholar — a generated file, don't hand-edit it (it's also in `.prettierignore`).
 
@@ -57,6 +59,7 @@ Body is free-form Markdown/HTML. `_config.yml`'s `announcements`/`latest_posts` 
 
 1. Add a BibTeX entry to `_bibliography/papers.bib` (use `_bibliography/template` as a starting skeleton — `@inproceedings` / `@article`).
 2. Key conventions used throughout the file: `abbr` (short venue tag), `bibtex_show = {true}`, `selected = {true|false}` (controls featured-publications display), optional `pdf`, `doi`, `code`, `smu` (SMU IR record id), `abstract`.
+   The `smu` id renders as a link to `https://ink.library.smu.edu.sg/<school>_research/<smu>/`, where `<school>` comes from an optional `smu_school` field and defaults to `sis`. Set `smu_school = {soss}` (etc.) for papers deposited under another school's collection. It is deliberately **not** named `school`: the theme already renders `entry.school` as the institution name on thesis-type entries (`_layouts/bib.liquid:158`), so that name would collide if a `@phdthesis`/`@mastersthesis` entry is ever added.
 3. If `abbr` refers to a venue not yet in `_data/venues.yml`, add it there (`url` + `color`) so the publications page renders a badge.
 4. For a new coauthor to get a profile link, add them to `_data/coauthors.yml`, grouped by **lowercase last name**; if a last name collides with an existing entry, add another `firstname` entry under the same key rather than duplicating the key.
 5. `related_publications: true` + `bibliography: papers.bib` front matter on a `_projects/*.md` page lets `{% cite key %}` pull from the same `.bib` file.
@@ -71,7 +74,7 @@ layout: page
 title: ...
 description: ...
 img: assets/img/....jpg
-importance: 1        # sort order within category
+importance: 1 # sort order within category
 category: Selected Projects
 related_publications: true
 bibliography: papers.bib
